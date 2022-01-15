@@ -1,0 +1,74 @@
+                <!-- Baris Pertama -->
+                <div class="row">
+                    <!-- Berita 1 -->
+                    <div class="col-md berita-box">
+                        <div class="card">
+                        <img src="./assets/img/berita/kemendes.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="berita-p">Some quick example text to build on the card title and 
+                                make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Berita 2 -->
+                    <div class="col-md berita-box">
+                        <div class="card">
+                        <img src="./assets/img/berita/kemendes.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="berita-p">Some quick example text to build on the card title and 
+                                make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Berita 3 -->
+                    <div class="col-md berita-box">
+                        <div class="card ">
+                        <img src="./assets/img/berita/kemendes.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="berita-p">Some quick example text to build on the card title and 
+                                make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baris Kedua -->
+                <div class="row">
+                    <!-- Berita 4 -->
+                    <div class="col-md berita-box">
+                        <div class="card">
+                        <img src="./assets/img/berita/kemendes.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="berita-p">Some quick example text to build on the card title and 
+                                make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Berita 5 -->
+                    <div class="col-md berita-box">
+                        <div class="card">
+                        <img src="./assets/img/berita/kemendes.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="berita-p">Some quick example text to build on the card title and 
+                                make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Berita 6 -->
+                    <div class="col-md berita-box">
+                        <div class="card ">
+                        <img src="./assets/img/berita/kemendes.png" class="card-img-top">
+                            <div class="card-body">
+                                <p class="berita-p">Some quick example text to build on the card title and 
+                                make up the bulk of the card's content.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
