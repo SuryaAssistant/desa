@@ -39,7 +39,6 @@ for(let i = 1; i <= 3; i++)
                         <br>
                         <h6 style="font-size:12px">Kecamatan Nawangan, Kabupaten Pacitan</h6>
                         <br>
-                        <a class="btn text-white button-berita" href="#berita" role="button" >Baca Berita Lainnya</a>
                         </div>
             </div>
         </div>
