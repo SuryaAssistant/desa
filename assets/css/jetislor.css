@@ -115,6 +115,24 @@ p{
     max-width:250px !important;
   }
 
+  .button-detail{
+    background-color:#68a12a !important;
+    color:#ffffff !important;
+    border-radius: 50% !important;
+    font-size:30px !important;
+    text-align:center;
+    height:50px !important;
+    width:50px !important;
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+    padding-left:0px !important;
+    padding-right:0px !important;
+  }
+
+  .detail-icon{
+    padding-top:9px;
+  }
+
   /*--------------------- Produk Section ----------------------*/
 
   .button-produk{
