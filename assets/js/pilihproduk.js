@@ -19,9 +19,11 @@ function displayKategori(){
     document.getElementById("kategori_produk").innerHTML = ``;
 
     for(let i=0; i<jLength; i++){
+        idKategori = i;
+
         document.getElementById("kategori_produk").innerHTML += `
         <div class="col-sm mb-3">
-        <button id="${database_kategori[i].idKategori}" type="button" class="btn btn-outline-success pilih-produk" onclick="pilihKategori(this.id)">${database_kategori[i].nama_kategori}</button>
+        <button id="${idKategori}" type="button" class="btn btn-outline-success pilih-produk" onclick="pilihKategori(this.id)">${database_kategori[i].nama_kategori}</button>
         </div>
         `;
     };
@@ -86,25 +88,26 @@ function pilihKembali(){
 // Untuk mendapatkan ID Produk yang dipilih
 function klikProduk(idProduk){
     produkDipilih = idProduk;
-    showMap(databaseDipilih, produkDipilih);
+    showMap(produkDipilih);
 }
 
 
 // Untuk menampilkan peta lokasi
-function showMap(idKategori, idProduk){
+function showMap(idProduk){
         // Hapus Map Sebelumnya
         document.getElementById("peta_lokasi").innerHTML = ``;
 
         // Tampilkan Map baru
         document.getElementById("peta_lokasi").innerHTML += `
         <div class="map-responsive">
-            <iframe width="500" height="300" id="gmap_canvas" src="${databaseDipilih[idProduk].lokasi}" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen></iframe>
+            <iframe width="500" height="300" src="${databaseDipilih[idProduk].lokasi}" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         `;
 
         // Tampilkan nama lokasi
         document.getElementById("nama_lokasi").innerHTML = ``;
         document.getElementById("nama_lokasi").innerHTML += `
-        ${databaseDipilih[idProduk].nama_produk}
+        ${databaseDipilih[idProduk].nama_produk}             
+        <p>Kontak : ${databaseDipilih[idProduk].kontak}</p>
         `;
 }
