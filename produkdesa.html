@@ -34,8 +34,8 @@
     <!-- Navbar here -->
     <nav class="navbar navbar-expand-md navbar-light navtop fixed-top " id="mainNav">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html" style="font-size: 14px;font-family: 'Open Sans', sans-serif; color:#ffffff">
-                <img src="./assets/img/logopacitan.png" alt="" width="auto" height="24" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="./index.html" style="font-size: 16px;font-family: 'Open Sans', sans-serif; color:#ffffff">
+                <img src="./assets/img/logopacitan.png" alt="" width="auto" height="26" class="d-inline-block align-text-top">
                 <Strong>Desa Jetis Lor</Strong>
             </a>
 
@@ -43,7 +43,7 @@
             <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="text-align:right; font-size:14px">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="text-align:right; font-size:16px">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="./profildesa.html" style="color:#ffffff">Profil</a>
@@ -71,7 +71,7 @@
     <section id="menuproduk" class="d-flex flex-column justify-content-center">
         <div class="container">
             <div class="section-title primecolor">
-                <h2>Produk Desa</h2>
+                <h2 id="produk_dipilih">Produk Desa</h2>
             </div>
             <hr>
             <div style="padding-bottom:40px">
@@ -79,33 +79,17 @@
 
             <div class="section-isi">
                 <!-- pilih jenis produk -->
-                <div class="row" style="text-align:center; padding-bottom:20px">
-                    <div class="col-sm mb-3">
-                        <button type="button" class="btn btn-outline-success pilih-produk" onclick="pilihPertanian()">Produk Pertanian</button>
-                    </div>
-                    <div class="col-sm mb-3">
-                        <button type="button" class="btn btn-outline-success pilih-produk" onclick="pilihPeternakan()">Produk Peternakan</button>
-                    </div>
-                    <div class="col-sm mb-3">
-                        <button type="button" class="btn btn-outline-success pilih-produk" onclick="pilihOlahan()">Produk Olahan</button>
-                    </div>
-                    <div class="col-sm mb-3">
-                        <button type="button" class="btn btn-outline-success pilih-produk" onclick="pilihWisata()">Destinasi Pariwisata</button>
-                    </div>
+                <div id="kategori_produk" class="row" style="text-align:center; padding-bottom:20px">
                 </div>
 
                 <!-- Produk yang dipilih -->
-                <div class="row" style="text-align:center; padding-bottom:20px">
-                    <h3 id="produk_dipilih">Pilih Produk</h3>
-                </div>
-
                 <div class="row" style="padding-bottom:40px">
                     <div id="daftar_produk" class="row row-cols-1 row-cols-md-5 g-4">
                     </div>
                 </div>
 
                 <!-- Peta Lokasi -->
-                <div class="row">
+                <div id="peta" class="row">
                     <p><Strong> Lokasi </Strong></p>
                     <p id="nama_lokasi" style="font-size:12px">Belum dipilih</p>
                     <div id="peta_lokasi" class="col-lg" style="text-align:right; padding-bottom:20px">
@@ -170,6 +154,8 @@
     <script src="./database/database_peternakan.js"></script>
     <script src="./database/database_olahan.js"></script>
     <script src="./database/database_wisata.js"></script>
+
+    <script src="./database/database_kategori.js"></script>
 
     <script src="./assets/js/pilihproduk.js"></script>
 
