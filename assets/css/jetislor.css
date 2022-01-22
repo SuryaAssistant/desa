@@ -257,3 +257,18 @@ p{
     width:100%;
     position:absolute;
   }
+
+
+  /*--------------------- Postingan ----------------------*/
+  .penulis{
+    font-size:12px; 
+    margin-bottom:0px;
+  }
+
+  .tanggal-publikasi{
+    font-size:12px; 
+    margin-bottom:0px;
+  }
+
+  /*--------------------- Sidebar ----------------------*/
+
