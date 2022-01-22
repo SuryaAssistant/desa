@@ -7,11 +7,11 @@ document.getElementById("kontak").innerHTML = `
             <p class="text-white kontak-title">Desa Jetis lor</p>
             <p class="kontak-alamat text-white">Jalan Pangsar Sudirman 05, Kecamatan Nawangan, Kabupaten Pacitan, Jawa Timur, 63584.</p>
             <div class="social-links" style="text-align:left">
-                <p class="kontak-media"><a href="mailto:09.fandisurya@gmail.com" class="email"><i class="bx bx-envelope primecolor"></i></a> email@email.com</p>
-                <p class="kontak-media"><a href="https://facebook.com" class="facebook"><i class='bx bxl-facebook-square primecolor'></i></a>Pemdesa Jetis Lor</p>
-                <p class="kontak-media"><a href="https://instagram.com/pemdesa_jetislor" class="instagram"><i class="bx bxl-instagram primecolor"></i></a>pemdesa_jetislor</p>
-                <p class="kontak-media"><a href="https://suryaassistant.github.io/" class="website"><i class="bx bx-globe primecolor"></i></a>jetislor.desa.id</p>
-                <p class="kontak-media"><a href="https://www.youtube.com/" class="youtube"><i class="bx bxl-youtube primecolor"></i></a>youtube</p>
+                <p class="kontak-media"><a href="mailto:09.fandisurya@gmail.com" class="email"><i class="bx bx-envelope primecolor"></i></a>email@email.com</p>
+                <p class="kontak-media"><a href="https://facebook.com" class="facebook" target="_blank"><i class='bx bxl-facebook-square primecolor'></i></a>Pemdesa Jetis Lor</p>
+                <p class="kontak-media"><a href="https://instagram.com/pemdesa_jetislor" class="instagram" target="_blank"><i class="bx bxl-instagram primecolor"></i></a>pemdesa_jetislor</p>
+                <p class="kontak-media"><a href="https://suryaassistant.github.io/" class="website" target="_blank"><i class="bx bx-globe primecolor"></i></a>jetislor.desa.id</p>
+                <p class="kontak-media"><a href="https://www.youtube.com/" class="youtube" target="_blank"><i class="bx bxl-youtube primecolor"></i></a>youtube</p>
             </div>
         </div>
 
