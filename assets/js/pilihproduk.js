@@ -124,25 +124,25 @@ function showMap(idProduk){
         document.getElementById("marketplace").innerHTML = ``;
 
 
-        if(databaseDipilih[idProduk].facebook != "")
+        if(databaseDipilih[idProduk].facebook != "" && databaseDipilih[idProduk].facebook!= undefined)
         {
             document.getElementById("marketplace").innerHTML += `
             <a href=${databaseDipilih[idProduk].facebook} target="_blank"><i class='bx bxl-facebook-square'></i></a>
             `;
         }
-        if(databaseDipilih[idProduk].instagram != "")
+        if(databaseDipilih[idProduk].instagram != "" && databaseDipilih[idProduk].instagram != undefined)
         {
             document.getElementById("marketplace").innerHTML += `
             <a href=${databaseDipilih[idProduk].instagram} target="_blank"><i class='bx bxl-instagram'></i></a>
             `;
         }
-        if(databaseDipilih[idProduk].tokopedia != "")
+        if(databaseDipilih[idProduk].tokopedia != "" && databaseDipilih[idProduk].tokopedia != undefined)
         {
             document.getElementById("marketplace").innerHTML += `
             <a href=${databaseDipilih[idProduk].tokopedia} target="_blank"><img src="./assets/img/tokopedia_small.png" style="padding-bottom:12px;padding-left:5px;padding-right:5px"></a>
             `;
         }
-        if(databaseDipilih[idProduk].shopee != "")
+        if(databaseDipilih[idProduk].shopee != "" && databaseDipilih[idProduk].shopee != undefined)
         {
             document.getElementById("marketplace").innerHTML += `
             <a href=${databaseDipilih[idProduk].shopee} target="_blank"><img src="./assets/img/shopee_small.png" style="padding-bottom:12px;padding-left:5px;padding-right:5px"></a>
