@@ -1,7 +1,7 @@
 document.getElementById("mainNav").innerHTML = `
 <div class="container-fluid">
     <a class="navbar-brand" href="./index.html" >
-        <img src="./assets/img/logopacitan.png" alt="" width="auto" height="26" class="d-inline-block align-text-top">
+        <img src="./assets/img/logopacitan_small.png" alt="" width="auto" height="26" class="d-inline-block align-text-top">
         <Strong>Desa Jetis Lor</Strong>
     </a>
 

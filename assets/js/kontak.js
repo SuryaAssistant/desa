@@ -5,7 +5,7 @@ document.getElementById("kontak").innerHTML = `
         <!-- Kontak Desa-->
         <div class="col-lg" style="padding-bottom:20px">
             <p class="text-white kontak-title">Desa Jetis lor</p>
-            <p class="kontak-alamat text-white">Jalan Nawangan-Jeruk, Kecamatan Nawangan, Kabupaten Pacitan, Jawa Timur, 63584.</p>
+            <p class="kontak-alamat text-white">Jalan Pangsar Sudirman 05, Kecamatan Nawangan, Kabupaten Pacitan, Jawa Timur, 63584.</p>
             <div class="social-links" style="text-align:left">
                 <p class="kontak-media"><a href="mailto:09.fandisurya@gmail.com" class="email"><i class="bx bx-envelope primecolor"></i></a> email@email.com</p>
                 <p class="kontak-media"><a href="https://facebook.com" class="facebook"><i class='bx bxl-facebook-square primecolor'></i></a>Pemdesa Jetis Lor</p>
