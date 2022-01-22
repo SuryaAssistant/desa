@@ -1,6 +1,6 @@
-database_kategori = [
+database_postingan = [
     {
-        "nama_kategori" : "Produk Pertanian",
+        "judul" : "Produk Pertanian",
         "referensi" : database_pertanian,
     },
     {
@@ -8,8 +8,8 @@ database_kategori = [
         "referensi" : database_peternakan,
     },
     {
-        "nama_kategori" : "Produk Kerajinan",
-        "referensi" : database_kerajinan,
+        "nama_kategori" : "Produk Olahan",
+        "referensi" : database_olahan,
     },
     {
         "nama_kategori" : "Destinasi Wisata",
