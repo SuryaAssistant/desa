@@ -3,7 +3,7 @@ document.getElementById("mainNav").innerHTML = `
     <a class="navbar-brand" href="./index.html" >
         <div class="row">
             <div class="col" style="text-align:center">
-                <img src="./assets/img/logopacitan_small.png" alt="" width="auto" height="50" class="d-inline-block align-text-top">
+                <img src="./assets/img/lambang_pacitan_small.png" alt="" width="auto" height="50" class="d-inline-block align-text-top">
             </div>
             <div class="col">
                 <Strong>Desa Jetis Lor</Strong>
@@ -39,4 +39,5 @@ document.getElementById("mainNav").innerHTML = `
         </ul>
     </div>
 </div>
+
 `;
