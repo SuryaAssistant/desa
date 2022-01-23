@@ -145,12 +145,12 @@ function showInfo(idProduk){
             <!-- Deskripsi Produk -->
             <div class="row">
                 <div class="col-sm-4" align="center">
-                    <img src="./database/img/${databaseDipilih[idProduk].img}" class="card-img-top" alt="produk">
+                    <img src="./database/img/${databaseDipilih[idProduk].img}" class="card-img-top" alt="produk" style="height:100%; width:100%">
                 </div>
                 <div class="col">
                     <div class="row" style="text-align:right">
-                        <div class="col" style="padding-top:20px; padding-right:40px">
-                            <button type="button" class="btn btn-outline-success pilih-produk" onclick="kembaliKeDaftarProduk()" style="width:100px; font-size:10px">Kembali</button>
+                        <div class="col" style="padding-top:20px; padding-right:40px; padding-bottom:20px">
+                            <button type="button" class="btn btn-outline-success pilih-produk" onclick="kembaliKeDaftarProduk()" style="max-width:100px; font-size:10px">Kembali</button>
                         </div>
                     </div>
                     <div class="row" style="padding-left:20px">
@@ -168,7 +168,7 @@ function showInfo(idProduk){
 
                         <p style="font-size:12px">Peta Lokasi : </p>
                         <div class="col" style="padding-bottom:20px" id="buttonMap">
-                            <button type="button" class="btn btn-outline-success pilih-produk" onclick="showMap(${idProduk})" style="width:100px; font-size:10px">Lokasi</button>
+                            <button type="button" class="btn btn-outline-success pilih-produk" onclick="showMap(${idProduk})" style="max-width:75px;font-size:20px"> <i class='bx bx-map-alt'></i></button>
                         </div>
                     </div>
                 </div> 
