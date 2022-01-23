@@ -1,6 +1,7 @@
 var jLength;
 
 var idProduk;
+var choosedKategori;
 
 var produkDipilih;
 var databaseDipilih;
@@ -16,33 +17,56 @@ displayKategori();
 /*---------------------------FUNGSI---------------------------*/
 /*---------------------Edit dengan Hati-Hati------------------*/
 
+// DISPLAY KATEGORI PRODUK
+// JANGAN DIUBAH
 function displayKategori(){
+    // Hapus Info Produk
+    document.getElementById("row_daftar_produk").innerHTML = ``;
+
     // Baca database_kategori
     jLength = Object.keys(database_kategori).length;
 
     // Hapus data sebelumnya
     document.getElementById("kategori_produk").innerHTML = ``;
 
+    document.getElementById("kategori_produk").innerHTML = `
+    <div class="row" style="text-align:center; padding-bottom:20px" id="chooseKategori">
+    </div>
+    `;
+
     for(let i=0; i<jLength; i++){
         idKategori = i;
 
-        document.getElementById("kategori_produk").innerHTML += `
+        document.getElementById("chooseKategori").innerHTML += `
         <div class="col-sm mb-3">
         <button id="${idKategori}" type="button" class="btn btn-outline-success pilih-produk" onclick="pilihKategori(this.id)">${database_kategori[i].nama_kategori}</button>
         </div>
         `;
     };
+
 }
+
+
+// KETIKA MEMILIKI KATEGORI,
+// TAMPILKAN DAFTAR PRODUK
 
 function pilihKategori(idKategori){
     // Display Produk berdasarkan Kategori terpilih
     databaseDipilih = database_kategori[idKategori].referensi;
+    choosedKategori = idKategori;
 
     // Baca jumlah data
     jLenght = Object.keys(databaseDipilih).length;
 
     // Hapus tampilan sebelumnya
-    document.getElementById("daftar_produk").innerHTML = ``;
+    document.getElementById("row_daftar_produk").innerHTML = ``;
+
+    document.getElementById("row_daftar_produk").innerHTML = `
+    <div class="row" style="padding-bottom:40px">
+        <div id="daftar_produk" class="row row-cols-1 row-cols-md-5 g-4">
+        </div>
+    </div>
+    `;
 
     // Buat kolom berdasarkan jumlah data
     for(let i = 0; i < jLenght; i++)
@@ -55,7 +79,7 @@ function pilihKategori(idKategori){
                 <img src="./database/img/${databaseDipilih[i].img}" class="card-img-top" alt="produk">
                 <div class="card-body" style="text-align:center">
                     <h5 class="card-title" style="padding-bottom:20px">${databaseDipilih[i].nama_produk}</h5>
-                    <button id="${idProduk}" href="#peta" type="button" class="btn btn-outline-success pilih-item" onclick="klikProduk(this.id)">Pilih</button>
+                    <button id="${idProduk}" type="button" class="btn btn-outline-success pilih-item" onclick="klikProduk(this.id)">Pilih</button>
                 </div>
             </div>
         </div>
@@ -64,88 +88,132 @@ function pilihKategori(idKategori){
 
     // Hapus Pilihan Kategori
     document.getElementById("kategori_produk").innerHTML=`
-    <div class="col-sm mb-3">
+    <div class="col-sm mb-3" style="text-align:center">
     <button type="button" class="btn btn-outline-success pilih-produk" onclick="pilihKembali()">Kembali</button>
     </div>
     `;
 }
 
+// KETIKA KELUAR DARI DAFTAR PRODUK
+// MASUK KE PILIHAN KATEGORI
 function pilihKembali(){
     // Tampilkan Kategori
     displayKategori();
 
-    // Hapus Produk
-    document.getElementById("daftar_produk").innerHTML = ``;
-
-    // Hapus Map
-    document.getElementById("peta_lokasi").innerHTML = ``;
-
-    // Hapus Nama Lokasi
-    document.getElementById("nama_lokasi").innerHTML = ``;
+    // Hapus Info Produk
+    document.getElementById("row_daftar_produk").innerHTML = ``;
 
     // Kembalikan Judul
     document.getElementById("produk_dipilih").innerHTML = `
     Produk Desa
     `;
 
-    // Hapus Link Marketplace
-    document.getElementById("marketplace").innerHTML = ``;
+}
 
+function kembaliKeDaftarProduk(){
+    // Hapus info produk
+    document.getElementById("info_produk").innerHTML = ``;
+
+    // tampilkan daftar produk kembali
+    pilihKategori(choosedKategori);
 }
 
 
 // Untuk mendapatkan ID Produk yang dipilih
 function klikProduk(idProduk){
     produkDipilih = idProduk;
-    showMap(produkDipilih);
+    showInfo(produkDipilih);
 }
 
 
-// Untuk menampilkan peta lokasi
-function showMap(idProduk){
-        // Hapus Map Sebelumnya
-        document.getElementById("peta_lokasi").innerHTML = ``;
+// MENAMPILKAN DESKRIPSI DARI PRODUK YANG DIPILIH
+function showInfo(idProduk){
+    // Hapus Pilihan Kategori
+    // Hapus Pilihan Kategori
+    document.getElementById("kategori_produk").innerHTML=``;
 
-        // Tampilkan Map baru
-        document.getElementById("peta_lokasi").innerHTML += `
-        <div class="map-responsive">
-            <iframe width="500" height="300" src="${databaseDipilih[idProduk].lokasi}" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    // Hapus Daftar Produk
+    document.getElementById("row_daftar_produk").innerHTML = ``;
+
+    // Hapus Info Sebelumnya
+    document.getElementById("info_produk").innerHTML = ``;
+
+    // Tampilkan informasi produk
+    document.getElementById("info_produk").innerHTML += `
+    <div class="col">
+        <div class="card shadow">
+            <!-- Deskripsi Produk -->
+            <div class="row">
+                <div class="col-sm-4" align="center">
+                    <img src="./database/img/${databaseDipilih[idProduk].img}" class="card-img-top" alt="produk">
+                </div>
+                <div class="col">
+                    <div class="row" style="text-align:right">
+                        <div class="col" style="padding-top:20px; padding-right:40px">
+                            <button type="button" class="btn btn-outline-success pilih-produk" onclick="kembaliKeDaftarProduk()" style="width:100px; font-size:10px">Kembali</button>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left:20px">
+                        <p style="font-size:12px"> 
+                        Nama Produk : ${databaseDipilih[idProduk].nama_produk}
+                        <br>
+                        Kontak :  ${databaseDipilih[idProduk].kontak}
+                        <br>
+                        Link Pembelian : 
+                        </p>
+                        <div class="row">
+                            <div class="col" id="marketplace" style="font-size:25px">
+                            </div>
+                        </p>
+
+                        <p style="font-size:12px">Peta Lokasi : </p>
+                        <div class="col" style="padding-bottom:20px" id="buttonMap">
+                            <button type="button" class="btn btn-outline-success pilih-produk" onclick="showMap(${idProduk})" style="width:100px; font-size:10px">Lokasi</button>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div id="peta_lokasi" class="row" style="margin-left:auto; margin-right:auto">
+            </div>           
         </div>
+    </div>
+    `;
+
+    // Marketplace
+    document.getElementById("marketplace").innerHTML = ``;
+
+    if(databaseDipilih[idProduk].facebook != "" && databaseDipilih[idProduk].facebook!= undefined)
+    {
+        document.getElementById("marketplace").innerHTML += `
+        <a href=${databaseDipilih[idProduk].facebook} target="_blank"><i class='bx bxl-facebook-square'></i></a>
         `;
-
-        // Tampilkan informasi kontak
-        document.getElementById("nama_lokasi").innerHTML = ``;
-        document.getElementById("nama_lokasi").innerHTML += `
-        ${databaseDipilih[idProduk].nama_produk}             
-        <p style="padding-bottom:0px">Kontak : ${databaseDipilih[idProduk].kontak}</p>
+    }
+    if(databaseDipilih[idProduk].instagram != "" && databaseDipilih[idProduk].instagram != undefined)
+    {
+        document.getElementById("marketplace").innerHTML += `
+        <a href=${databaseDipilih[idProduk].instagram} target="_blank"><i class='bx bxl-instagram'></i></a>
         `;
+    }
+    if(databaseDipilih[idProduk].tokopedia != "" && databaseDipilih[idProduk].tokopedia != undefined)
+    {
+        document.getElementById("marketplace").innerHTML += `
+        <a href=${databaseDipilih[idProduk].tokopedia} target="_blank"><img src="./assets/img/tokopedia_small.png" style="padding-bottom:12px;padding-left:5px;padding-right:5px"></a>
+        `;
+    }
+    if(databaseDipilih[idProduk].shopee != "" && databaseDipilih[idProduk].shopee != undefined)
+    {
+        document.getElementById("marketplace").innerHTML += `
+        <a href=${databaseDipilih[idProduk].shopee} target="_blank"><img src="./assets/img/shopee_small.png" style="padding-bottom:12px;padding-left:5px;padding-right:5px"></a>
+        `;
+    }
+}
 
-        // Marketplace
-        document.getElementById("marketplace").innerHTML = ``;
+function showMap(idProduk){
+    document.getElementById("buttonMap").innerHTML = ``;
 
-
-        if(databaseDipilih[idProduk].facebook != "" && databaseDipilih[idProduk].facebook!= undefined)
-        {
-            document.getElementById("marketplace").innerHTML += `
-            <a href=${databaseDipilih[idProduk].facebook} target="_blank"><i class='bx bxl-facebook-square'></i></a>
-            `;
-        }
-        if(databaseDipilih[idProduk].instagram != "" && databaseDipilih[idProduk].instagram != undefined)
-        {
-            document.getElementById("marketplace").innerHTML += `
-            <a href=${databaseDipilih[idProduk].instagram} target="_blank"><i class='bx bxl-instagram'></i></a>
-            `;
-        }
-        if(databaseDipilih[idProduk].tokopedia != "" && databaseDipilih[idProduk].tokopedia != undefined)
-        {
-            document.getElementById("marketplace").innerHTML += `
-            <a href=${databaseDipilih[idProduk].tokopedia} target="_blank"><img src="./assets/img/tokopedia_small.png" style="padding-bottom:12px;padding-left:5px;padding-right:5px"></a>
-            `;
-        }
-        if(databaseDipilih[idProduk].shopee != "" && databaseDipilih[idProduk].shopee != undefined)
-        {
-            document.getElementById("marketplace").innerHTML += `
-            <a href=${databaseDipilih[idProduk].shopee} target="_blank"><img src="./assets/img/shopee_small.png" style="padding-bottom:12px;padding-left:5px;padding-right:5px"></a>
-            `;
-        }
+    document.getElementById("peta_lokasi").innerHTML += `
+    <div class="map-responsive">
+        <iframe width="500" height="300" src="${databaseDipilih[idProduk].lokasi}" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    `;
 }
