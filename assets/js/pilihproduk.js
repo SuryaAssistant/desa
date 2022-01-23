@@ -39,7 +39,7 @@ function displayKategori(){
 
         document.getElementById("chooseKategori").innerHTML += `
         <div class="col-sm mb-3">
-        <button id="${idKategori}" type="button" class="btn btn-outline-success pilih-produk" onclick="pilihKategori(this.id)">${database_kategori[i].nama_kategori}</button>
+            <button id="${idKategori}" type="button" class="btn btn-outline-success pilih-produk" onclick="pilihKategori(this.id)">${database_kategori[i].nama_kategori}</button>
         </div>
         `;
     };
@@ -145,7 +145,7 @@ function showInfo(idProduk){
             <!-- Deskripsi Produk -->
             <div class="row">
                 <div class="col-sm-4" align="center">
-                    <img src="./database/img/${databaseDipilih[idProduk].img}" class="card-img-top" alt="produk" style="height:100%; width:100%">
+                    <img src="./database/img/${databaseDipilih[idProduk].img}" class="card-img-top" alt="produk" style="height:100%; object-fit:cover">
                 </div>
                 <div class="col">
                     <div class="row" style="text-align:right">
