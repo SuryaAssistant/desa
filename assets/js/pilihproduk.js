@@ -27,19 +27,22 @@ function displayKategori(){
     jLength = Object.keys(database_kategori).length;
 
     // Hapus data sebelumnya
-    document.getElementById("kategori_produk").innerHTML = ``;
-
     document.getElementById("kategori_produk").innerHTML = `
-    <div class="row" style="text-align:center; padding-bottom:20px" id="chooseKategori">
+    <div id="chooseKategori" class="row row-cols-1 row-cols-md-2 g-4" style="margin-left:10%; margin-right:10%;" align="center">
     </div>
     `;
 
-    for(let i=0; i<jLength; i++){
+    for(let i=0; i<jLength; i++)
+    {
         idKategori = i;
 
         document.getElementById("chooseKategori").innerHTML += `
-        <div class="col-sm mb-3">
-            <button id="${idKategori}" type="button" class="btn btn-outline-success pilih-produk" onclick="pilihKategori(this.id)">${database_kategori[i].nama_kategori}</button>
+        <div class="col">
+            <div class="card shadow h-100">
+                <div id="${idKategori}" class="card-body" style="padding-top:70px; padding-bottom:70px" onclick="pilihKategori(this.id)">
+                    <h5 class="card-title">${database_kategori[i].nama_kategori}</h5>
+                </div>
+            </div>
         </div>
         `;
     };
@@ -62,10 +65,8 @@ function pilihKategori(idKategori){
     document.getElementById("row_daftar_produk").innerHTML = ``;
 
     document.getElementById("row_daftar_produk").innerHTML = `
-    <div class="row" style="padding-bottom:40px">
-        <div id="daftar_produk" class="row row-cols-1 row-cols-md-5 g-4">
+        <div id="daftar_produk" class="row row-cols-1 row-cols-md-4 g-4" style="padding-bottom:40px">
         </div>
-    </div>
     `;
 
     // Buat kolom berdasarkan jumlah data
@@ -75,11 +76,10 @@ function pilihKategori(idKategori){
 
         document.getElementById("daftar_produk").innerHTML += `
         <div class="col">
-            <div class="card h-100 shadow">
-                <img src="./database/img/${databaseDipilih[i].img}" class="card-img-top" alt="produk">
+            <div id="${idProduk}" class="card h-100 shadow" onclick="klikProduk(this.id)">
+                <img src="./database/img/${databaseDipilih[i].img}" class="card-img-top" alt="produk" style="height:150px; object-fit:cover">
                 <div class="card-body" style="text-align:center">
-                    <h5 class="card-title" style="padding-bottom:20px">${databaseDipilih[i].nama_produk}</h5>
-                    <button id="${idProduk}" type="button" class="btn btn-outline-success pilih-item" onclick="klikProduk(this.id)">Pilih</button>
+                    <h5 class="card-title" style="padding-bottom:20px; font-size:16px">${databaseDipilih[i].nama_produk}</h5>
                 </div>
             </div>
         </div>
