@@ -89,7 +89,7 @@ function pilihKategori(idKategori){
 
     // Hapus Pilihan Kategori
     document.getElementById("kategori_produk").innerHTML=`
-    <div class="col-sm mb-3" style="text-align:center">
+    <div class="col-sm mb-5" style="text-align:center">
     <button type="button" class="btn btn-outline-success pilih-produk" onclick="pilihKembali()" style="font-size:10px">Kembali</button>
     </div>
     `;
@@ -156,7 +156,7 @@ function showInfo(idProduk){
                     </div>
                     <div class="row" style="padding-left:20px">
                         <p style="font-size:12px"> 
-                        Nama Produk : ${databaseDipilih[idProduk].nama_produk}
+                        ${databaseDipilih[idProduk].nama_produk}
                         <br>
                         Kontak :  ${databaseDipilih[idProduk].kontak}
                         <br>
