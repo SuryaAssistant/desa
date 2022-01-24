@@ -24,7 +24,7 @@ document.getElementById("mainNav").innerHTML = `
                 <a class="nav-link" href="./profildesa.html" style="color:#ffffff">Profil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./produkdesa.html" style="color:#ffffff">Produk UKM</a>
+                <a class="nav-link" href="./produkdesa.html" style="color:#ffffff">Produk UMKM</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="./beritadesa.html" style="color:#ffffff">Berita</a>
