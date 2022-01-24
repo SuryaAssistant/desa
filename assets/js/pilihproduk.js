@@ -80,6 +80,7 @@ function pilihKategori(idKategori){
                 <img src="./database/img/${databaseDipilih[i].img}" class="card-img-top" alt="produk" style="height:150px; object-fit:cover">
                 <div class="card-body" style="text-align:center">
                     <h5 class="card-title" style="padding-bottom:20px; font-size:14px">${databaseDipilih[i].nama_produk}</h5>
+                    <p style="font-size:12px">Dusun ${databaseDipilih[i].dusun}</p>
                 </div>
             </div>
         </div>
@@ -89,7 +90,7 @@ function pilihKategori(idKategori){
     // Hapus Pilihan Kategori
     document.getElementById("kategori_produk").innerHTML=`
     <div class="col-sm mb-3" style="text-align:center">
-    <button type="button" class="btn btn-outline-success pilih-produk" onclick="pilihKembali()">Kembali</button>
+    <button type="button" class="btn btn-outline-success pilih-produk" onclick="pilihKembali()" style="font-size:10px">Kembali</button>
     </div>
     `;
 }
