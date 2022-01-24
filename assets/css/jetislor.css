@@ -80,6 +80,9 @@ body {
     text-align:right;
   }
   
+  .alertColor{
+    background-color:#2b4645;
+  }
 
 /*----------------------SECTION--------------------*/
 section {
