@@ -28,7 +28,7 @@ function displayKategori(){
 
     // Hapus data sebelumnya
     document.getElementById("kategori_produk").innerHTML = `
-    <div id="chooseKategori" class="row row-cols-1 row-cols-md-2 g-4" style="margin-left:10%; margin-right:10%;" align="center">
+    <div id="chooseKategori" class="row row-cols-1 row-cols-2 g-4" style="margin-left:10%; margin-right:10%;" align="center">
     </div>
     `;
 
@@ -40,7 +40,7 @@ function displayKategori(){
         <div class="col">
             <div class="card shadow h-100">
                 <div id="${idKategori}" class="card-body" style="padding-top:70px; padding-bottom:70px" onclick="pilihKategori(this.id)">
-                    <h5 class="card-title">${database_kategori[i].nama_kategori}</h5>
+                    <h5 class="card-title" style="font-size:14px">${database_kategori[i].nama_kategori}</h5>
                 </div>
             </div>
         </div>
@@ -79,7 +79,7 @@ function pilihKategori(idKategori){
             <div id="${idProduk}" class="card h-100 shadow" onclick="klikProduk(this.id)">
                 <img src="./database/img/${databaseDipilih[i].img}" class="card-img-top" alt="produk" style="height:150px; object-fit:cover">
                 <div class="card-body" style="text-align:center">
-                    <h5 class="card-title" style="padding-bottom:20px; font-size:16px">${databaseDipilih[i].nama_produk}</h5>
+                    <h5 class="card-title" style="padding-bottom:20px; font-size:14px">${databaseDipilih[i].nama_produk}</h5>
                 </div>
             </div>
         </div>
