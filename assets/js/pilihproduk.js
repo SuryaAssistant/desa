@@ -80,7 +80,7 @@ function pilihKategori(idKategori){
                 <img src="./database/img/${databaseDipilih[i].img}" class="card-img-top" alt="produk" style="height:150px; object-fit:cover">
                 <div class="card-body" style="text-align:center">
                     <h5 class="card-title" style="padding-bottom:20px; font-size:14px">${databaseDipilih[i].nama_produk}</h5>
-                    <p style="font-size:12px">Dusun ${databaseDipilih[i].dusun}</p>
+                    <p style="font-size:12px"><i class='bx bxs-map'></i> Dusun ${databaseDipilih[i].dusun}</p>
                 </div>
             </div>
         </div>
@@ -159,8 +159,6 @@ function showInfo(idProduk){
                         ${databaseDipilih[idProduk].nama_produk}
                         <br>
                         Kontak :  ${databaseDipilih[idProduk].kontak}
-                        <br>
-                        Link Pembelian : 
                         </p>
                         <div class="row">
                             <div class="col" id="marketplace" style="font-size:25px">
@@ -169,7 +167,7 @@ function showInfo(idProduk){
 
                         <p style="font-size:12px">Peta Lokasi : </p>
                         <div class="col" style="padding-bottom:20px" id="buttonMap">
-                            <button type="button" class="btn btn-outline-success pilih-produk" onclick="showMap(${idProduk})" style="max-width:75px;font-size:20px"> <i class='bx bx-map-alt'></i></button>
+                            <button type="button" class="btn btn-outline-success pilih-produk" onclick="showMap(${idProduk})" style="max-width:75px;font-size:15px"><i class='bx bx-map-alt'></i></button>
                         </div>
                     </div>
                 </div> 
@@ -198,19 +196,19 @@ function showInfo(idProduk){
     if(databaseDipilih[idProduk].tokopedia != "" && databaseDipilih[idProduk].tokopedia != undefined)
     {
         document.getElementById("marketplace").innerHTML += `
-        <a href=${databaseDipilih[idProduk].tokopedia} target="_blank"><img src="./assets/img/tokopedia_small.png" style="padding-bottom:12px;padding-left:5px;padding-right:5px"></a>
+        <a href=${databaseDipilih[idProduk].tokopedia} target="_blank"><img src="./assets/img/tokopedia.svg" style="padding-bottom:6px;padding-left:5px;padding-right:5px;height:25px"></a>
         `;
     }
     if(databaseDipilih[idProduk].shopee != "" && databaseDipilih[idProduk].shopee != undefined)
     {
         document.getElementById("marketplace").innerHTML += `
-        <a href=${databaseDipilih[idProduk].shopee} target="_blank"><img src="./assets/img/shopee_small.png" style="padding-bottom:12px;padding-left:5px;padding-right:5px"></a>
+        <a href=${databaseDipilih[idProduk].shopee} target="_blank"><img src="./assets/img/shopee.svg" style="padding-bottom:7px;padding-left:5px;padding-right:5px;height:25px"></a>
         `;
     }
 }
 
 function showMap(idProduk){
-    document.getElementById("buttonMap").innerHTML = ``;
+    document.getElementById("peta_lokasi").innerHTML = ``;
 
     document.getElementById("peta_lokasi").innerHTML += `
     <div class="map-responsive">
