@@ -33,53 +33,56 @@
     <!-- End of Navbar -->
 
     <!-- Halaman -->
-    <section id="body_post" class="d-flex flex-column justify-content-center">
+    <section id="body_post" class="d-flex flex-column justify-content-center" style="margin-top:20px; background-color:#F1F1F1">
         <div class="container">
             <!-- Judul -->
-            <div class="section-title primecolor" style="text-align:center">
-                <h2 id="judulPost"></h2>
-            </div>
-            <hr>
 
             <div class="section-isi">
                 <div class="row">
                     <!-- Postingan -->
                     <div class="col-md-8">
+                        <div class="card shadow-sm" style="border:none">
+                            <div class="card-body">
+                                <!-- Judul -->
+                                <div class="section-title primecolor" style="text-align:left">
+                                    <h2 id="judulPost"></h2>
+                                </div>
 
-                        <!-- Penulis -->
-                        <br>
-                        <p class="penulis" id="penulisPost"></p>
-                        <!-- Tanggal Publikasi -->
-                        <p class="tanggal-publikasi" id="tanggalPost"></p>
-                        <br>
+                                <!-- Penulis -->
+                                <br>
+                                <p class="penulis" id="penulisPost"></p>
+                                <!-- Tanggal Publikasi -->
+                                <p class="tanggal-publikasi" id="tanggalPost"></p>
+                                <br>
 
-                        <!-- Isi Post-->                        
-                        <div class="row">
-                            <div class="col" id="isiPost">
+                                <!-- Isi Post-->                        
+                                <div class="row" style="font-size:14px">
+                                    <div class="col" id="isiPost">
+                                    </div>
+                                </div>
+
+                                <!-- Share Post -->
+                                <div class="row" id="sharePost">
+                                </div>
+
+                                <!-- Next & Previous Post -->
+                                <div class="row" style="margin-top:20px">
+                                    <div class="col" align="left" style="opacity:0.7">
+                                        Berita Sebelumya
+                                        <p id="prev_post" style="font-size:12px"></p>
+                                    </div>
+                                    <div class="col" align="right" style="opacity:0.7">
+                                        Berita Selanjutnya
+                                        <p id="next_post" style="font-size:12px"></p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
-
-                        <!-- Share Post -->
-                        <div class="row" id="sharePost">
-                        </div>
-
                     </div>
 
                     <!-- Sidebar -->
-                    <div class="col-md-4" align="center">
-                        <!-- Cari Artikel -->
-                        <div class="row">
-                            <div clas="col" id="cari_artikel">
-                            </div>
-                        </div>
-                        <!-- Informasi Desa -->
-                        <div class="row" >
-                            <div class="col" id="info_desa">
-                            </div>
-                        </div>
-                        <!-- Artikel Lainnya -->
-                        <div class="row" id="artikel_lain">
-                        </div>
+                    <div class="col-md-4" align="center" id="sidebar">
                     </div>
                 </div>
 
@@ -103,8 +106,8 @@
 
 
     <!-- Javascript -->
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
     <script src="./contoh-postingan.js"></script>
-
     <script src="../assets/js/sidebar.js"></script>
     <script src="../assets/js/posting.js"></script>
     <script src="../assets/js/navbar.js"></script>
@@ -113,6 +116,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+
+
 
 </body>
 </html>

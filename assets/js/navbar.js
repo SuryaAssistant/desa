@@ -1,9 +1,11 @@
+var homepage = "http://fandiadinata.com/desa";
+
 document.getElementById("mainNav").innerHTML = `
 <div class="container-fluid">
     <a class="navbar-brand" href="./index.html" >
         <div class="row">
             <div class="col" style="text-align:center">
-                <img src="./assets/img/lambang_pacitan_small.png" alt="" width="auto" height="50" class="d-inline-block align-text-top">
+                <img src="${homepage}/assets/img/lambang_pacitan_small.png" alt="" width="auto" height="50" class="d-inline-block align-text-top">
             </div>
             <div class="col">
                 <Strong>Desa Jetis Lor</Strong>
@@ -21,16 +23,16 @@ document.getElementById("mainNav").innerHTML = `
     <div class="collapse navbar-collapse justify-content-end navbar-menu" id="navbarSupportedContent" >
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="./profildesa.html" style="color:#ffffff">Profil</a>
+                <a class="nav-link" href="${homepage}/profildesa.html" style="color:#ffffff">Profil</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./produkdesa.html" style="color:#ffffff">Produk UMKM</a>
+                <a class="nav-link" href="${homepage}/produkdesa.html" style="color:#ffffff">Produk UMKM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./beritadesa.html" style="color:#ffffff">Berita</a>
+                <a class="nav-link" href="${homepage}/berita.html" style="color:#ffffff">Berita</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="./pemerintahan.html" style="color:#ffffff">Pemerintahan</a>
+                <a class="nav-link" href="${homepage}/pemerintahan.html" style="color:#ffffff">Pemerintahan</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#kontak" style="color:#ffffff">Kontak</a>

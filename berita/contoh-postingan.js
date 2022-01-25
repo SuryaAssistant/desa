@@ -1,15 +1,16 @@
 // Deskripsi Postingan
 deskripsi = [
     {
-        "judul" : "Contoh Postingan",
+        "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
-        "tanggal" : "18 Januari 2021",
-        "jam" : "18.00 WIB",
+        "tanggal" : 18,
+        "bulan" : 1,
+        "tahun" : 2022,
+        "jam" : "18.00",
         "deskripsi" : "Contoh template postingan html untuk website @2022",
         "keywords" : "desa jetis lor, jetis lor, jetis, nawangan, pacitan",
     },
 ];
-
 
 // Isi Postingan
 document.getElementById('isiPost').innerHTML=`

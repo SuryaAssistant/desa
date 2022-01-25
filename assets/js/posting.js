@@ -25,3 +25,30 @@ Ditulis oleh : ${deskripsi[0].penulis}
 document.getElementById("tanggalPost").innerHTML = `
 Pada ${deskripsi[0].tanggal} ${deskripsi[0].jam}
 `;
+
+// Share Post
+document.getElementById("sharePost").innerHTML = `
+<p><Strong>Share</Strong> </p>
+
+<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_email"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_telegram"></a>
+<a class="a2a_button_linkedin"></a>
+</div>
+`;
+
+// Prev Post
+document.getElementById("prev_post").innerHTML = `
+<br>
+Lorep Ipsum
+`;
+
+// Next Post
+document.getElementById("next_post").innerHTML = `
+<br>
+Dolor sit amet
+`;
