@@ -20,7 +20,7 @@ document.getElementById("pagination").innerHTML = `
 
 for(let i=0; i<max_page_number; i++){
     document.getElementById("pagination").innerHTML += `
-    <a id="${i + 1}" onclick="page(this.id)"> ${i+1} </a>
+    <a id="${i + 1}" onclick="page(${i + 1})"> ${i+1} </a>
     `;
 }
 
@@ -29,7 +29,7 @@ document.getElementById("pagination").innerHTML += `
 `;
 
 update_post();
-document.getElementById("1").classList.add("active");
+document.getElementById(1).classList.add("active");
 
 
 // Show berita based page number
