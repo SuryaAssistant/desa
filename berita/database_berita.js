@@ -1,5 +1,8 @@
+var homepage = "http://fandiadinata.com/desa";
+
 database_berita = [
     {
+        "id" : 33,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 27,
@@ -9,6 +12,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  32,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 20,
@@ -18,6 +22,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  31,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 18,
@@ -27,6 +32,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  30,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 272,
@@ -36,6 +42,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  29,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 21320,
@@ -45,6 +52,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  28,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 11328,
@@ -54,6 +62,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  27,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 27132,
@@ -63,6 +72,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  26,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 20,
@@ -72,6 +82,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  25,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 18132,
@@ -81,6 +92,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  24,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 27,
@@ -90,6 +102,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  23,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 20132,
@@ -99,6 +112,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  22,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 18,
@@ -108,6 +122,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  21,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 21327,
@@ -117,6 +132,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  20,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 20,
@@ -126,6 +142,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  19,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 18132,
@@ -135,6 +152,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  18,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 27,
@@ -144,6 +162,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  17,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 21320,
@@ -153,6 +172,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  16,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 1852,
@@ -162,6 +182,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  15,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 27,
@@ -171,6 +192,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  14,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 22530,
@@ -180,6 +202,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  13,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 1863,
@@ -189,6 +212,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  12,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 27,
@@ -198,6 +222,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  11,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 2580,
@@ -207,6 +232,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  10,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 18,
@@ -216,6 +242,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  9,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 27,
@@ -225,6 +252,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  8,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 2085,
@@ -234,6 +262,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  7,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 18,
@@ -243,6 +272,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  6,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 27,
@@ -252,6 +282,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  5,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 20,
@@ -261,6 +292,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  4,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 18,
@@ -270,6 +302,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" : 3,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 27,
@@ -279,6 +312,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  2,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 20,
@@ -288,6 +322,7 @@ database_berita = [
         "link" : "contoh-postingan.html",
     },
     {
+        "id" :  1,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 18,

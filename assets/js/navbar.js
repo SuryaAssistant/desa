@@ -2,7 +2,7 @@ var homepage = "http://fandiadinata.com/desa";
 
 document.getElementById("mainNav").innerHTML = `
 <div class="container-fluid">
-    <a class="navbar-brand" href="./index.html" >
+    <a class="navbar-brand" href="${homepage}" >
         <div class="row">
             <div class="col" style="text-align:center">
                 <img src="${homepage}/assets/img/lambang_pacitan_small.png" alt="" width="auto" height="50" class="d-inline-block align-text-top">

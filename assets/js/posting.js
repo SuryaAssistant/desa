@@ -41,14 +41,28 @@ document.getElementById("sharePost").innerHTML = `
 </div>
 `;
 
+
+var postId = deskripsi[0].id;
+var postNumber;
+
+for(let i=0; i<database_berita.length; i++){
+    if(database_berita[i].id == postId){
+        postNumber = i;
+    };
+};
+
 // Prev Post
 document.getElementById("prev_post").innerHTML = `
 <br>
-Lorep Ipsum
+<a href="./${database_berita[postNumber+1].link}">
+${database_berita[postNumber+1].judul}
+</a>
 `;
 
 // Next Post
 document.getElementById("next_post").innerHTML = `
 <br>
-Dolor sit amet
+<a href="./${database_berita[postNumber-1].link}">
+${database_berita[postNumber-1].judul}
+</a>
 `;

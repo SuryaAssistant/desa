@@ -1,6 +1,7 @@
 // Deskripsi Postingan
 deskripsi = [
     {
+        "id" : 12,
         "judul" : "Contoh Postingan Pertama Untuk Desa Jetis Lor, Nawangan, Pacitan",
         "penulis" : "Penulis Anonim",
         "tanggal" : 18,
@@ -14,6 +15,9 @@ deskripsi = [
 
 // Isi Postingan
 document.getElementById('isiPost').innerHTML=`
+<img src="./assets/img/0000001.jpg" style="object-fit:cover; width:100%">
+<br>
+<br>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 Quisque porttitor dolor eleifend velit dignissim, nec vestibulum augue egestas. 
 Vestibulum tincidunt ante at nibh iaculis lacinia. Aliquam vel iaculis orci, pulvinar dictum sem. 

@@ -29,6 +29,8 @@ document.getElementById("pagination").innerHTML += `
 `;
 
 update_post();
+document.getElementById("1").classList.add("active");
+
 
 // Show berita based page number
 function update_post(){

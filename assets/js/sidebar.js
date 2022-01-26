@@ -22,7 +22,7 @@ document.getElementById("sidebar").innerHTML = `
 
 // Cari artikel
 
-// Informasi Umum
+// berita baru
 document.getElementById("berita_baru").innerHTML = `
 <p align="left"><Strong>Berita Terbaru</Strong></p>
 `;
@@ -30,7 +30,7 @@ document.getElementById("berita_baru").innerHTML = `
 for(let i=0; i<3; i++)
 {
     document.getElementById("berita_baru").innerHTML += `
-    <a style="text-decoration:none;color:#182c2d" href="./berita/${database_berita[i].link}">
+    <a style="text-decoration:none;color:#182c2d" href="${homepage}/berita/${database_berita[i].link}">
     <p style="font-size:14px; margin-bottom:10px">${database_berita[i].judul}</p>
     </a>
     `;
