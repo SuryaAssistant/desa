@@ -29,7 +29,7 @@ document.getElementById("mainNav").innerHTML = `
                 <a class="nav-link" href="${homepage}/produkdesa.html" style="color:#ffffff">Produk UMKM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="${homepage}/berita.html" style="color:#ffffff">Berita</a>
+                <a class="nav-link" href="http://jetislor.kabpacitan.id" style="color:#ffffff">Berita</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="${homepage}/pemerintahan.html" style="color:#ffffff">Pemerintahan</a>
