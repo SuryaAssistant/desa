@@ -9,7 +9,7 @@ deskripsi = [
         "tahun" : 2022,
         "jam" : "18.00",
         "deskripsi" : "Contoh template postingan html untuk website @2022",
-        "keywords" : "desa jetis lor, jetis lor, jetis, nawangan, pacitan",
+        "keywords" : "desa jetis lor, jetislor, jetis, nawangan, pacitan",
     },
 ];
 

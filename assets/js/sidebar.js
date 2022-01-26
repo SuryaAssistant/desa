@@ -39,6 +39,6 @@ for(let i=0; i<3; i++)
 // Informasi Umum
 document.getElementById("info_desa").innerHTML = `
 <p align="left"><Strong>Info Desa</Strong></p>
-<img src="./assets/img/logopacitan.png" align="center" width="200px" style="padding-bottom:20px">
+<img src="${homepage}/berita/info_desa/logopacitan.png" align="center" width="200px" style="padding-bottom:20px">
 `;
 
