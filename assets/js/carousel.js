@@ -35,10 +35,6 @@ for(let i = 1; i <= 3; i++)
             <div class="row" style="text-align:center;">
                 <div class="col">
                     <h1><Strong>${carousel_data[i-1].deskripsi}</Strong></h1>
-                    <br>
-                    <br>
-                    <h6 style="font-size:12px">Kecamatan Nawangan, Kabupaten Pacitan</h6>
-                    <br>
                 </div>
             </div>
         </div>

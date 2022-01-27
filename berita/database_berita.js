@@ -1,5 +1,3 @@
-var homepage = "http://fandiadinata.com/desa";
-
 database_berita = [
     {
         "id" :  20,
