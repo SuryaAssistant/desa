@@ -19,12 +19,15 @@ ${deskripsi[0].judul}
 
 // Tampilkan penulis
 document.getElementById("penulisPost").innerHTML = `
-Ditulis oleh : ${deskripsi[0].penulis}
+<i class='bx bxs-pencil'></i> ${deskripsi[0].penulis}
 `;
+
+var bulan = ["Januari", "Februari", 'Maret', "April", "Mei", "Juni", "Juli", 
+    "Agustus", "September", "Oktober", "November", "Desember"];
 
 // Tampilkan tanggal publikasi
 document.getElementById("tanggalPost").innerHTML = `
-Pada ${deskripsi[0].tanggal} ${deskripsi[0].jam}
+<i class='bx bx-time-five'></i> ${deskripsi[0].tanggal} ${bulan[deskripsi[0].bulan - 1]} ${deskripsi[0].tahun} ${deskripsi[0].jam}
 `;
 
 // Share Post

@@ -53,13 +53,18 @@ function update_post(){
             </div>
             <div class="col-sm-9">
                 <a style="text-decoration:none;color:#182c2d" href="./berita/${database_berita[i].link}"><h4 style="font-size:14px; padding-bottom:5px">${database_berita[i].judul}</h4></a>
-                <p style="font-size:12px; margin-bottom:0px">${database_berita[i].penulis}</p>
-                <p style="font-size:12px; margin-bottom:0px">${database_berita[i].tanggal} ${bulan[database_berita[i].bulan-1]} ${database_berita[i].tahun}</p>
+                <p style="font-size:12px; margin-bottom:0px; opacity:0.5"><i class='bx bxs-pencil'></i> ${database_berita[i].penulis}</p>
+                <p style="font-size:12px; margin-bottom:0px; opacity:0.5"><i class='bx bx-time-five'></i> ${database_berita[i].tanggal} ${bulan[database_berita[i].bulan-1]} ${database_berita[i].tahun}</p>
             </div>
         </div>
-        <hrblog></hrblog>
         `;
-        };
+
+        if(i<(finish_number-1)){
+            document.getElementById("recent_post").innerHTML += `
+            <hrblog></hrblog>
+            `;
+        }
+    };
 }
 
 

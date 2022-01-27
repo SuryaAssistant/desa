@@ -6,7 +6,7 @@ document.getElementById("sidebar").innerHTML = `
     <div class="card shadow-sm" style="border:none">
         <div class="card-body">
             <div class="col" id="pengumuman">
-            <p align="left"><Strong>PENGUMUMAN</Strong></p>
+            <p align="left"><Strong><i class='bx bx-pin'></i> PENGUMUMAN</Strong></p>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -47,7 +47,7 @@ document.getElementById("sidebar").innerHTML = `
     <div class="card shadow-sm" style="border:none">
         <div class="card-body">
             <div class="col" id="info_desa">
-            <p align="left"><Strong>INFO DESA</Strong></p>
+            <p align="left"><Strong><i class='bx bx-info-circle'></i> INFO DESA</Strong></p>
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -77,18 +77,25 @@ document.getElementById("sidebar").innerHTML = `
 
 
 // berita baru
+var jumlahBeritaBaru = 3;
+
 document.getElementById("berita_baru").innerHTML = `
-<p align="left"><Strong>BERITA TERBARU</Strong></p>
+<p align="left"><Strong><i class='bx bx-book-open'></i> BERITA TERBARU</Strong></p>
 `;
 
-for(let i=0; i<3; i++)
+for(let i=0; i<jumlahBeritaBaru; i++)
 {
     document.getElementById("berita_baru").innerHTML += `
     <a style="text-decoration:none;color:#182c2d" href="${homepage}/berita/${database_berita[i].link}">
     <p style="font-size:14px; margin-bottom:10px">${database_berita[i].judul}</p>
     </a>
-    <hrblog></hrblog>
     `;
+
+    if(i < (jumlahBeritaBaru-1)){
+      document.getElementById("berita_baru").innerHTML += `
+      <hrblog></hrblog>
+      `;
+    };
 }
 
 

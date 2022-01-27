@@ -6,7 +6,10 @@ document.getElementById("kontak").innerHTML = `
         <div class="col-md" style="padding-bottom:20px">
             <p class="text-white kontak-title">Desa Jetis lor</p>
             <p class="kontak-alamat text-white">Jalan Sudirman, Kecamatan Nawangan, Kabupaten Pacitan, Jawa Timur, 63584.</p>
-            <p class="kontak-alamat text-white">Jam Operasional : Senin - Jumat pukul 08.00 - 12.00 WIB</p>
+            <p class="kontak-alamat text-white">
+            Senin - Kamis pukul 08.00 - 13.00 WIB
+            <br>
+            Jumat pukul 08.00 - 11.00 WIB</p>
             <div class="social-links" style="text-align:left">
                 <p class="kontak-media"><a href="mailto:09.fandisurya@gmail.com" class="email"><i class="bx bx-envelope primecolor"></i></a>jetislorpacitan@gmail.com</p>
                 <p class="kontak-media"><a href="https://facebook.com" class="facebook" target="_blank"><i class='bx bxl-facebook-square primecolor'></i></a>Pemdesa Jetis Lor</p>
