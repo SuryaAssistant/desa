@@ -34,8 +34,11 @@ var bulan = ["Januari", "Februari", 'Maret', "April", "Mei", "Juni", "Juli",
 
 
 // Tampilkan ke index.html
-document.getElementById("event_desa").innerHTML = `
-<p class="text-white" style="padding-top:70px; font-size:12px; margin-bottom:0px">
-    ${eventTerdekat[0].nama_kegiatan} : ${eventTerdekat[0].hari}, ${eventTerdekat[0].tanggal} ${bulan[eventTerdekat[0].bulan - 1]} ${eventTerdekat[0].tahun}
-</p>
-`;
+
+if(eventTerdekat[0].nama_kegiatan != undefined){
+    document.getElementById("event_desa").innerHTML = `
+    <p class="text-white" style="padding-top:70px; font-size:12px; margin-bottom:0px">
+        ${eventTerdekat[0].nama_kegiatan} : ${eventTerdekat[0].hari}, ${eventTerdekat[0].tanggal} ${bulan[eventTerdekat[0].bulan - 1]} ${eventTerdekat[0].tahun}
+    </p>
+    `;
+};
