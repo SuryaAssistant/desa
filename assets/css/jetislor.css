@@ -301,5 +301,15 @@ section {
   }
   .pagination a:hover:not(.active) {background-color: #ddd;}
 
+  hrblog{
+    display:block;
+    border: 0px;
+    height: 1px !important;
+    width: 100%;
+    color: #2b4645;
+    background-color: #2b4645 !important; 
+    opacity: 0.2 !important;
+    margin-bottom:10px;
+  }
   /*--------------------- Sidebar ----------------------*/
 

@@ -34,31 +34,32 @@ document.getElementById(1).classList.add("active");
 
 // Show berita based page number
 function update_post(){
-var start_number = (current_page-1) * max_number;
-var finish_number = (current_page) * max_number;
+    var start_number = (current_page-1) * max_number;
+    var finish_number = (current_page) * max_number;
 
-if(finish_number > jumlahBerita){
-    finish_number = jumlahBerita;
-};
+    if(finish_number > jumlahBerita){
+        finish_number = jumlahBerita;
+    };
 
-document.getElementById("recent_post").innerHTML = ``;
+    document.getElementById("recent_post").innerHTML = ``;
 
-for(let i=start_number; i<finish_number; i++){
-    document.getElementById("recent_post").innerHTML += `
-    <div class="row" style="padding-bottom:30px">
-        <div class="col-sm-2">
-            <a href="./berita/${database_berita[i].link}">
-            <img src="./assets/img/padi.jpeg" style="width:100%;object-fit:cover; margin-bottom:10px">
-            </a>
+    for(let i=start_number; i<finish_number; i++){
+        document.getElementById("recent_post").innerHTML += `
+        <div class="row" style="padding-bottom:10px">
+            <div class="col-sm-2">
+                <a href="./berita/${database_berita[i].link}">
+                <img src="./assets/img/padi.jpeg" style="width:100%;object-fit:cover; margin-bottom:10px">
+                </a>
+            </div>
+            <div class="col-sm-9">
+                <a style="text-decoration:none;color:#182c2d" href="./berita/${database_berita[i].link}"><h4 style="font-size:14px; padding-bottom:5px">${database_berita[i].judul}</h4></a>
+                <p style="font-size:12px; margin-bottom:0px">${database_berita[i].penulis}</p>
+                <p style="font-size:12px; margin-bottom:0px">${database_berita[i].tanggal} ${bulan[database_berita[i].bulan-1]} ${database_berita[i].tahun}</p>
+            </div>
         </div>
-        <div class="col-sm-9">
-            <a style="text-decoration:none;color:#182c2d" href="./berita/${database_berita[i].link}"><h4 style="font-size:14px; padding-bottom:5px">${database_berita[i].judul}</h4></a>
-            <p style="font-size:12px; margin-bottom:0px">${database_berita[i].penulis}</p>
-            <p style="font-size:12px; margin-bottom:0px">${database_berita[i].tanggal} ${bulan[database_berita[i].bulan-1]} ${database_berita[i].tahun}</p>
-        </div>
-    </div>
-    `;
-};
+        <hrblog></hrblog>
+        `;
+        };
 }
 
 
