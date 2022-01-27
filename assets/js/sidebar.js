@@ -10,13 +10,13 @@ document.getElementById("sidebar").innerHTML = `
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="${homepage}/berita/pengumuman/pengumuman1.jpg" class="d-block w-100">
+                  <img src="${homepage}/berita/pengumuman/pengumuman1.jpg" class="d-block w-100" style="max-height:250px; max-width:100%;">
                 </div>
                 <div class="carousel-item">
-                  <img src="${homepage}/berita/pengumuman/pengumuman2.jpg" class="d-block w-100">
+                  <img src="${homepage}/berita/pengumuman/pengumuman2.jpg" class="d-block w-100" style="max-height:250px; max-width:100%;">
                 </div>
                 <div class="carousel-item">
-                  <img src="${homepage}/berita/pengumuman/pengumuman3.png" class="d-block w-100">
+                  <img src="${homepage}/berita/pengumuman/pengumuman3.png" class="d-block w-100" style="max-height:250px; max-width:100%;">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
