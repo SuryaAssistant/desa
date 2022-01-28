@@ -46,11 +46,6 @@ function update_post(){
     for(let i=start_number; i<finish_number; i++){
         document.getElementById("recent_post").innerHTML += `
         <div class="row" style="padding-bottom:10px">
-            <div class="col-sm-2">
-                <a href="./berita/${database_berita[i].link}">
-                <img src="./assets/img/padi.jpeg" style="width:100%;object-fit:cover; margin-bottom:10px">
-                </a>
-            </div>
             <div class="col-sm-9">
                 <a style="text-decoration:none;color:#182c2d" href="./berita/${database_berita[i].link}"><h4 style="font-size:14px; padding-bottom:5px">${database_berita[i].judul}</h4></a>
                 <p style="font-size:12px; margin-bottom:0px; opacity:0.5"><i class='bx bxs-pencil'></i> ${database_berita[i].penulis}</p>

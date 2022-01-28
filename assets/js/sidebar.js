@@ -16,7 +16,7 @@ document.getElementById("sidebar").innerHTML = `
                   <img src="${homepage}/berita/pengumuman/pengumuman2.jpg" class="d-block w-100" style="max-height:250px; max-width:100%;">
                 </div>
                 <div class="carousel-item">
-                  <img src="${homepage}/berita/pengumuman/pengumuman3.png" class="d-block w-100" style="max-height:250px; max-width:100%;">
+                  <img src="${homepage}/berita/pengumuman/pengumuman3.jpg" class="d-block w-100" style="max-height:250px; max-width:100%;">
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
