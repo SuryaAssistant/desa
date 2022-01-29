@@ -1,3 +1,16 @@
+// Info Penting ----------------------------------------------------------------
+if(info_penting[0].info != "" && info_penting[0].info != undefined){
+    document.getElementById("info_penting").innerHTML = `
+    <div class="alert alert-primary" role="alert" style="font-size:12px">
+        <Strong>INFO PENTING</Strong>
+        <br>
+        ${info_penting[0].info}
+    </div>
+    `;
+};
+
+//------------------------------------------------------------------------------
+
 // Read database
 var jumlahBerita = Object.keys(database_berita).length;
 var max_number = 5;
@@ -48,7 +61,6 @@ function update_post(){
         <div class="row" style="padding-bottom:10px">
             <div class="col-sm-9">
                 <a style="text-decoration:none;color:#182c2d" href="./berita/${database_berita[i].link}"><h4 style="font-size:14px; padding-bottom:5px">${database_berita[i].judul}</h4></a>
-                <p style="font-size:12px; margin-bottom:0px; opacity:0.5"><i class='bx bxs-pencil'></i> ${database_berita[i].penulis}</p>
                 <p style="font-size:12px; margin-bottom:0px; opacity:0.5"><i class='bx bx-time-five'></i> ${database_berita[i].tanggal} ${bulan[database_berita[i].bulan-1]} ${database_berita[i].tahun}</p>
             </div>
         </div>
