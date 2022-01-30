@@ -33,7 +33,7 @@ document.getElementById("mainNav").innerHTML = `
                 <a class="nav-link" href="${homepage}/produkdesa" style="color:#ffffff">UMKM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="${homepage}/berita.html" style="color:#ffffff">Berita</a>
+                <a class="nav-link" href="${homepage}/berita" style="color:#ffffff">Berita</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#kontak" style="color:#ffffff">Kontak</a>
