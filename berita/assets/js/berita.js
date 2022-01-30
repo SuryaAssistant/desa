@@ -1,13 +1,5 @@
 // Info Penting ----------------------------------------------------------------
-if(info_penting[0].info != "" && info_penting[0].info != undefined){
-    document.getElementById("info_penting").innerHTML = `
-    <div class="alert alert-primary" role="alert" style="font-size:12px">
-        <Strong>INFO PENTING</Strong>
-        <br>
-        ${info_penting[0].info}
-    </div>
-    `;
-};
+var info_penting = "";
 
 //------------------------------------------------------------------------------
 
