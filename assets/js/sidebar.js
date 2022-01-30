@@ -7,7 +7,7 @@ document.getElementById("sidebar").innerHTML = `
 <div class="row" style="margin-bottom:20px; margin-left:0px; margin-right:0px" align="left">
     <div class="card shadow-sm" style="border:none">
         <div class="card-body">
-        <p align="left"><Strong><i class='bx bx-video'></i> VIDEO LAYANAN MASYARAKAT</Strong></p>
+        <p align="left"><Strong><i class='bx bx-video'></i> IKLAN LAYANAN MASYARAKAT</Strong></p>
         <iframe src="https://drive.google.com/file/d/1QDgUu1rD4b4wWhBF8zELcmE0lFI25rQa/preview" width="100%" allow="autoplay"></iframe>
         </div>
     </div>
