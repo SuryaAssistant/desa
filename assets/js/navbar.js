@@ -27,7 +27,7 @@ document.getElementById("mainNav").innerHTML = `
                 <a class="nav-link" href="${homepage}/pemerintahan.html" style="color:#ffffff">Pemerintahan</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="${homepage}/produkhukum.html" style="color:#ffffff">Produk Hukum</a>
+                <a class="nav-link" href="${homepage}/produkhukum" style="color:#ffffff">Produk Hukum</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="${homepage}/produkdesa" style="color:#ffffff">UMKM</a>
