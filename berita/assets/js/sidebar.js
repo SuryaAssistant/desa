@@ -1,9 +1,8 @@
 // Create sidebar element
 
-
 document.getElementById("sidebar").innerHTML = `
-<!-- Video Layanan Masyarakat-->
 
+<!-- Video Layanan Masyarakat-->
 <div class="row" style="margin-bottom:20px; margin-left:0px; margin-right:0px" align="left">
     <div class="card shadow-sm" style="border:none">
         <div class="card-body">
