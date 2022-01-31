@@ -1,3 +1,4 @@
+// -----------------------------META---------------------------------------------
 var meta_description;
 var meta_keywords;
 
@@ -10,7 +11,7 @@ meta_keywords = '<meta name="keywords" content="' + String(deskripsi[0].keywords
 $('meta[name=keywords]').remove();
 $('head').append( meta_keywords );
 
-
+//----------------------BLOG--------------------------------------------------------
 
 // Tampilkan judul
 document.getElementById("judulPost").innerHTML=`
