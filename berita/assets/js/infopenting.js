@@ -32,7 +32,7 @@ function updateInfoPenting(){
     if(info_penting != "" && info_penting != undefined){
         document.getElementById("info_penting").innerHTML = `
         <div class="alert alert-primary" role="alert" style="font-size:12px">
-            <Strong>INFO PENTING</Strong>
+            <Strong><img src="../assets/img/speaker.svg" style="max-width:15px"> INFO PENTING</Strong>
             <br>
             ${info_penting}
         </div>

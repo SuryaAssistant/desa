@@ -5,7 +5,7 @@ var info_penting = "";
 
 // Read database
 var jumlahBerita = Object.keys(database_berita).length;
-var max_number = 5;
+var max_number = 10;
 
 // page total
 var max_page_number = Math.floor(jumlahBerita / max_number) + 1;
