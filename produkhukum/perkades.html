@@ -50,39 +50,35 @@
 
                 <!-- pilih jenis produk -->
                 <div id="produkhukum" class="row">
-                    <div class="col">
-                        <table class="table table-hover">
+                    <div class="col-md-3" style="margin-bottom:20px">
+                        <div class="row">
+                            <h5 style="font-size:16px">
+                                <Strong><i class='bx bx-search'></i> PENCARIAN</Strong>
+                            </h5>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="row">
+                            <p>Berdasarkan Tahun</p>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Tahun" aria-label="Tahun" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class='bx bx-search'></i></button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-9">
+                        <table class="table table-hover" style="font-size:14px">
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th>Peraturan</th>
+                                    <th>Nama Peraturan</th>
                                     <th>Tahun</th>
                                     <th>Status</th>
                                     <th>Unduh</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Perkades no 3 tahun 2022</td>
-                                    <td>2022</td>
-                                    <td>Aktif</td>
-                                    <td>No</td>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Perkades no 2 tahun 2022</td>
-                                    <td>2022</td>
-                                    <td>Aktif</td>
-                                    <td>No</td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Perkades no 1 tahun 2022</td>
-                                    <td>2022</td>
-                                    <td>Aktif</td>
-                                    <td>No</td>
-                                </tr>
+                            <tbody id="perkadestable">
                             </tbody>
                         </table>
                     </div>
