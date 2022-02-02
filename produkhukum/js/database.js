@@ -11,7 +11,6 @@ async function getData() {
   
   getData().then((data) => { 
     perkades = data;
-    console.log(perkades);
     updateData();
   }
   

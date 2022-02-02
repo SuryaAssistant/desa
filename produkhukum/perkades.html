@@ -50,7 +50,7 @@
 
                 <!-- pilih jenis produk -->
                 <div id="produkhukum" class="row">
-                    <div class="col-md-3" style="margin-bottom:20px">
+                    <div class="col-md-3" style="margin-bottom:20px; padding-right:40px">
                         <div class="row">
                             <h5 style="font-size:16px">
                                 <Strong><i class='bx bx-search'></i> PENCARIAN</Strong>
@@ -61,13 +61,16 @@
                         <div class="row">
                             <p>Berdasarkan Tahun</p>
                             <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Tahun" aria-label="Tahun" aria-describedby="button-addon2">
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class='bx bx-search'></i></button>
+                                <input type="text" class="form-control" placeholder="Tahun" aria-label="Tahun" aria-describedby="button-addon2" id="searchquery">
+                                <button class="btn btn-outline-secondary" type="button" onclick="search()"><i class='bx bx-search'></i></button>
                             </div>
                         </div>
 
                     </div>
                     <div class="col-md-9">
+                            <h5 style="font-size:16px">
+                                <Strong><i class='bx bx-spreadsheet'></i> HASIL PENCARIAN</Strong>
+                            </h5>
                         <table class="table table-hover" style="font-size:14px">
                             <thead>
                                 <tr>
@@ -81,6 +84,11 @@
                             <tbody id="perkadestable">
                             </tbody>
                         </table>
+                        <div class="row" style="text-align:right">
+                            <div class="col">
+                                <button type="button" class="btn btn-warning" style="font-size:12px; text-align:center" onclick="showAll()">Show All</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -111,6 +119,7 @@
     <script src="../assets/js/footer.js"></script>
 
     <script src="./js/produk.js"></script>
+    <script src="./js/search.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script type="module" src="./js/database.js"></script>
