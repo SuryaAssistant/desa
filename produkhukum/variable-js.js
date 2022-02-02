@@ -1,1 +1,0 @@
-var artikel_database;
