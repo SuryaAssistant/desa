@@ -48,9 +48,10 @@
 
             <div class="section-isi">
 
-                <!-- pilih jenis produk -->
                 <div id="produkhukum" class="row">
-                    <div class="col-md-3" style="margin-bottom:20px; padding-right:40px">
+
+                    <!-- Search Box-->
+                    <div class="col-md-3" style="margin-bottom:20px;">
                         <div class="row">
                             <h5 style="font-size:16px">
                                 <Strong><i class='bx bx-search'></i> PENCARIAN</Strong>
@@ -59,14 +60,42 @@
                             <br>
                         </div>
                         <div class="row">
-                            <p>Berdasarkan Tahun</p>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Tahun" aria-label="Tahun" aria-describedby="button-addon2" id="searchquery">
-                                <button class="btn btn-outline-secondary" type="button" onclick="search()"><i class='bx bx-search'></i></button>
+                            <div class="col">
+                                <p style="text-align:center">
+                                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" style="font-size:12px; ">Nama Peraturan</a>
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2" style="font-size:12px; ">Tahun</button>
+                                </p>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                            <div class="card card-body">
+                                                <div class="row">
+                                                    <p>Berdasarkan Nama</p>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" placeholder="Nama Peraturan" aria-label="Nama Peraturan" aria-describedby="button-addon2" id="searchword">
+                                                        <button class="btn btn-outline-secondary" type="button" onclick="searchWord()"><i class='bx bx-search'></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                            <div class="card card-body">
+                                                <div class="row">
+                                                    <p>Berdasarkan Tahun</p>
+                                                    <div class="input-group mb-3">
+                                                        <input type="text" class="form-control" placeholder="Tahun" aria-label="Tahun" aria-describedby="button-addon2" id="searchquery">
+                                                        <button class="btn btn-outline-secondary" type="button" onclick="search()"><i class='bx bx-search'></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
+
+                    <!-- Result -->
                     <div class="col-md-9">
                             <h5 style="font-size:16px">
                                 <Strong><i class='bx bx-spreadsheet'></i> HASIL PENCARIAN</Strong>

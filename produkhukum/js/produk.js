@@ -9,24 +9,24 @@ var downloadFiture = "Tidak Tersedia";
 // ------------------------EDIT CAREFULLY--------------------------------
 
 function displayPerkades(){
-    document.getElementById("perkadestable").innerHTML = ``;
-
     if(perkades.length <= max_value){
         max_value = perkades.length;
     };
 
     updateTable(max_value, perkades);
-    console.log(perkades)
 }
 
 function showAll(){
-    document.getElementById("perkadestable").innerHTML = ``;
     document.getElementById("searchquery").value = "";
+    document.getElementById("searchword").value = "";
 
     updateTable(perkades.length, perkades)
 }
 
 function updateTable(tableLength, tableDatabase){
+    document.getElementById("perkadestable").innerHTML = `
+    `;
+
     for(let i=0; i<tableLength; i++){
         classbutton = "bg-success";
 
