@@ -30,7 +30,7 @@ document.getElementById("mainNav").innerHTML = `
                 <a class="nav-link" href="${homepage}/produkhukum" style="color:#ffffff">Produk Hukum</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="${homepage}/produkdesa" style="color:#ffffff">UMKM</a>
+                <a class="nav-link" href="${homepage}/produkdesa" style="color:#ffffff">Produk Desa</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="${homepage}/berita" style="color:#ffffff">Berita</a>
