@@ -8,9 +8,10 @@ function search(){
 
     if(yearSearch != ""){
         // save as new database;
-        for(let i=0; i<perkades.length; i++){
-            if(perkades[i].tahun == yearSearch){
-                searchedDatabase[j] = perkades[i];
+        for(let i=0; i<peraturan.length; i++){
+            if(peraturan[i].tahun == yearSearch){
+                searchedDatabase[j] = peraturan[i];
+
                 j++;
             }
         };
@@ -31,10 +32,10 @@ function searchWord(){
 
     if(wordSearch != ""){
         // save as new database;
-        for(let i=0; i<perkades.length; i++){
+        for(let i=0; i<peraturan.length; i++){
 
-            if(perkades[i].nama_peraturan.toLowerCase().includes(wordSearch.toLowerCase()) == true ){
-                searchedDatabase[j] = perkades[i];
+            if(peraturan[i].nama_peraturan.toLowerCase().includes(wordSearch.toLowerCase()) == true ){
+                searchedDatabase[j] = peraturan[i];
                 j++;
             }
         };

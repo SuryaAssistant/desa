@@ -1,4 +1,4 @@
-var perkades;
+var peraturan;
 var searchedDatabase=[{}];
 
 var max_value=10;
@@ -8,23 +8,23 @@ var downloadFiture = "Tidak Tersedia";
 // ---------------------- RESCTRICTED AREA -------------------------------
 // ------------------------EDIT CAREFULLY--------------------------------
 
-function displayPerkades(){
-    if(perkades.length <= max_value){
-        max_value = perkades.length;
+function displayPeratutan(){
+    if(peraturan.length <= max_value){
+        max_value = peraturan.length;
     };
 
-    updateTable(max_value, perkades);
+    updateTable(max_value, peraturan);
 }
 
 function showAll(){
     document.getElementById("searchquery").value = "";
     document.getElementById("searchword").value = "";
 
-    updateTable(perkades.length, perkades)
+    updateTable(peraturan.length, peraturan)
 }
 
 function updateTable(tableLength, tableDatabase){
-    document.getElementById("perkadestable").innerHTML = `
+    document.getElementById("peraturantable").innerHTML = `
     `;
 
     for(let i=0; i<tableLength; i++){
@@ -40,7 +40,7 @@ function updateTable(tableLength, tableDatabase){
             downloadFiture = `<a type="button" class="btn btn-success" href=${tableDatabase[i].unduh} target="_blank" style="font-size:12px"><i class='bx bxs-file-pdf'></i></button>`;
         }
 
-        document.getElementById("perkadestable").innerHTML += `
+        document.getElementById("peraturantable").innerHTML += `
         <tr>
             <td>${i+1}</td>
             <td>${tableDatabase[i].nama_peraturan}</td>

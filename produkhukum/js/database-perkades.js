@@ -10,13 +10,13 @@ async function getData() {
   }
   
   getData().then((data) => { 
-    perkades = data;
+    peraturan = data;
     updateData();
   }
   
 );
 
 function updateData(){
-    displayPerkades();
+    displayPeratutan();
 }
 
