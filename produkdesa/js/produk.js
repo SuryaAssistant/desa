@@ -26,7 +26,7 @@ function displayKategori(){
         <div class="col">
             <div id="${i}" class="card shadow h-100" onclick="pilihKategori(this.id)">
                 <div class="card-body" style="padding-top:70px; padding-bottom:70px">
-                    <h5 class="card-title" style="font-size:14px">${umkmDatabase[i].nama_produk}</h5>
+                    <h5 class="card-title" style="font-size:16px">${umkmDatabase[i].nama_produk}</h5>
                 </div>
             </div>
         </div>
