@@ -73,90 +73,43 @@
 
             <div class="section-isi">
 
-                <!-- Produk Pertanian -->
+                <!-- Produk Hukum -->
                 <div class="row produk-row">
-                    <div class="col-4 mb-5 position-relative" style="text-align:center">
+                    <div class="col-lg-4 mb-5 position-relative" style="text-align:center; padding-left:20px; padding-right:20px">
                         <div class="row" style="height:200px">
-                            <img class="produk-img position-absolute top-50 start-50 translate-middle" 
-                            src="./assets/img/padi.jpeg">
+                            <div>
+                                <canvas id="myChart"></canvas>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-8" style="padding-left:50px; padding-right:40px">
+                    <div class="col-lg-8" style="padding-left:20px; padding-right:20px">
                         <p class="produk-title">
-                            <Strong>Produk Pertanian</Strong>
+                            <Strong>Produk Hukum</Strong>
                         </p>
                         <p class="produk-p">
-                            Petani merupakan mata pencaharian sebagian besar warga Desa Jetis Lor. 
-                            Padi menjadi tanaman utama yang ditanam di sawah-sawah warga. 
-                            Tidak heran, Anda akan mudah menemukan persawahan terasering selama berada di sini. 
-                            Selain padi, komoditas pertanian yang ada di desa ini antara lain adalah Daun Janggelan dan Kopi.
                         </p>
                     </div>
                 </div>
 
-                <!-- Produk Peternakan -->
+                <!-- Produk Hukum -->
                 <div class="row produk-row">
-                    <div class="col-8" style="padding-right:50px; padding-left:40px">
+                    <div class="col-lg-8" style="padding-right:20px; padding-left:20px">
                         <p class="produk-title">
-                            <Strong>Produk Peternakan</Strong>
+                            <Strong>Produk Hukum</Strong>
                         </p>
                         <p class="produk-p">
-                            Kambing peranakan etawa (PE) banyak menjadi salah satu hewan yang banyak diternakan di Desa ini. 
-                            Selain untuk menjual kambing, beberapa peternak kambing PE juga menjual susu kambing etawa. 
-                            Tidak hanya itu, beberapa lainnya menternakan kambing PE untuk tujuan kontes.
                         </p>
                     </div>
-                    <div class="col-4 mb-5 position-relative" style="text-align:center">
+                    <div class="col-lg-4 mb-5 position-relative" style="text-align:center; padding-left:20px; padding-right:20px">
                         <div class="row" style="height:200px">
-                            <img class="produk-img position-absolute top-50 start-50 translate-middle" 
-                            src="./assets/img/peternakan.jpg">
+                            <div>
+                                <canvas id="myChart2"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
+           </div>
 
-                <!-- Produk Kerajinan -->
-                <div class="row produk-row">
-                    <div class="col-4 mb-5 position-relative" style="text-align:center">
-                        <div class="row" style="height:200px">
-                            <img class="produk-img position-absolute top-50 start-50 translate-middle" 
-                            src="./assets/img/produk_example.png">
-                        </div>
-                    </div>
-                    <div class="col-8" style="padding-left:50px; padding-right:40px">
-                        <p class="produk-title">
-                            <Strong>Produk Kerajinan</Strong>
-                        </p>
-                        <p class="produk-p">
-                            Jika Anda merupakan kolektor batu akik, maka dusun Tamansari di Desa Jetis Lor bisa menjadi salah satu tujuan Anda. 
-                            Berbagai jenis dan motif batu akik dapat ditemukan daerah ini. 
-                            Selain batu akik, terdapat pula kerajian berupa kursi dan meja rotan.
-                            Tidak seperti perabotan pada umumnya yang menggunakan bahan kayu, bahan yang digunakan adalah rotan. 
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Objek Wisata -->
-                <div class="row produk-row">
-                    <div class="col-8" style="padding-right:50px; padding-left:40px">
-                        <p class="produk-title">
-                            <Strong>Objek Wisata</Strong>
-                        </p>
-                        <p class="produk-p">
-                            Desa Jetis Lor terletak di daerah pegungan yang mengelilingi kota Pacitan. 
-                            Tepatnya di daerah pegunungan utara Pacitan. 
-                            Selama perjalanan, Anda akan disuguhkan pemandangan berupa lembah dan gunung. 
-                            Selain itu, Anda juga dapat melihat area persawahan yang tehampar luas di Desa Jetis Lor.
-                        </p>
-                    </div>
-                    <div class="col-4 mb-5 position-relative" style="text-align:center">
-                        <div class="row" style="height:200px">
-                            <img class="produk-img position-absolute top-50 start-50 translate-middle" 
-                            src="./assets/img/mountain_example.png">
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
     </section>
     <!-- End of Statistik-->
@@ -174,7 +127,6 @@
 
     <!-- Javascript -->
 
-    <!-- Import Database-->
     <script src="../assets/js/homepage.js"></script>
     
     <script src="../assets/js/navbar.js"></script>
@@ -183,6 +135,56 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const labels = [
+    '2017',
+    '2018',
+    '2019',
+    '2020',
+    '2021',
+    '2022',
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Jumlah PERDES',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [8, 10, 7, 11, 12, 2, 40],
+    },
+    {
+        label: 'Jumlah PERKADES',
+        backgroundColor: 'rgb(0, 0, 0)',
+        borderColor: 'rgb(0, 0, 0)',
+        data: [15, 12, 8, 2, 14, 1, 40],
+    }]
+  };
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+</script>
+
+
+<script>
+
+  // === include 'setup' then 'config' above ===
+
+  var myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+  var myChart2 = new Chart(
+    document.getElementById('myChart2'),
+    config
+  );
+</script>
+
 
 </body>
 </html>
