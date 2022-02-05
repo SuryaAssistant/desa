@@ -36,6 +36,9 @@ document.getElementById("mainNav").innerHTML = `
                 <a class="nav-link" href="${homepage}/berita" style="color:#ffffff">Berita</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="${homepage}/statistik" style="color:#ffffff">Statistik</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="#kontak" style="color:#ffffff">Kontak</a>
             </li>
             
