@@ -315,5 +315,16 @@ section {
     opacity: 0.2 !important;
     margin-bottom:10px;
   }
-  /*--------------------- Sidebar ----------------------*/
+
+
+
+  /*--------------------- Statistik ----------------------*/
+
+  .text-green{
+    color:#68a12a!important;
+  }
+
+  .border-green{
+    border-color:#68a12a!important;
+  }
 
