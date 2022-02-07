@@ -87,25 +87,31 @@ document.getElementById("sidebar").innerHTML = `
 
 
 // berita baru
-var jumlahBeritaBaru = 3;
 
-document.getElementById("berita_baru").innerHTML = `
-<p align="left"><Strong><i class='bx bx-book-open'></i> BERITA TERBARU</Strong></p>
-`;
+function update_sidebar(){
+    var jumlahBeritaBaru = 3;
 
-for(let i=0; i<jumlahBeritaBaru; i++)
-{
-    document.getElementById("berita_baru").innerHTML += `
-    <a style="text-decoration:none;color:#182c2d" href="${homepage}/berita/${database_berita[i].link}">
-    <p style="font-size:12px; margin-bottom:10px">${database_berita[i].judul}</p>
-    </a>
+    if(Object.keys(database_berita).length < jumlahBeritaBaru){
+        jumlahBeritaBaru = Object.keys(database_berita).length;
+    }
+
+    document.getElementById("berita_baru").innerHTML = `
+    <p align="left"><Strong><i class='bx bx-book-open'></i> BERITA TERBARU</Strong></p>
     `;
 
-    if(i < (jumlahBeritaBaru-1)){
-      document.getElementById("berita_baru").innerHTML += `
-      <hrblog></hrblog>
-      `;
-    };
-}
+    for(let i=0; i<jumlahBeritaBaru; i++)
+    {
+        document.getElementById("berita_baru").innerHTML += `
+        <a style="text-decoration:none;color:#182c2d" href="${homepage}/berita/${database_berita[i].alamat_artikel}">
+        <p style="font-size:12px; margin-bottom:10px">${database_berita[i].judul}</p>
+        </a>
+        `;
 
+        if(i < (jumlahBeritaBaru-1)){
+        document.getElementById("berita_baru").innerHTML += `
+        <hrblog></hrblog>
+        `;
+        };
+    }
+}
 

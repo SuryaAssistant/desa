@@ -1,73 +1,68 @@
-// -----------------------------META---------------------------------------------
-var meta_description;
-var meta_keywords;
+// ------------------READ DATABASE BASED on Posting HTML Address ---------
+var alamat_post = location.pathname.split("/").slice(-1);
+var database_post = [{}];
+var database_berita = [{}];
 
-// Setting meta tag
-meta_description = '<meta name="description" content="' + String(deskripsi[0].deskripsi) + '">';
-$('meta[name=description]').remove();
-$('head').append( meta_description );
+function update_artikel(){
+    // -----------------------------META---------------------------------------------
+    var meta_description;
+    var meta_keywords;
 
-meta_keywords = '<meta name="keywords" content="' + String(deskripsi[0].keywords) + '">'
-$('meta[name=keywords]').remove();
-$('head').append( meta_keywords );
+    // Setting meta tag
+    meta_description = '<meta name="description" content="' + String(database_post[0].deskripsi) + '">';
+    $('meta[name=description]').remove();
+    $('head').append( meta_description );
 
-//----------------------BLOG--------------------------------------------------------
+    meta_keywords = '<meta name="keywords" content="' + String(database_post[0].keyword) + '">'
+    $('meta[name=keywords]').remove();
+    $('head').append( meta_keywords );
 
-// Tampilkan judul
-document.getElementById("judulPost").innerHTML=`
-${deskripsi[0].judul}
-`;
+    //----------------------BLOG--------------------------------------------------------
 
-// Tampilkan penulis
-document.getElementById("penulisPost").innerHTML = `
-<i class='bx bxs-pencil'></i> ${deskripsi[0].penulis}
-`;
+    // Tampilkan judul
+    document.getElementById("judulPost").innerHTML=`
+    ${database_post[0].judul}
+    `;
 
-var bulan = ["Januari", "Februari", 'Maret', "April", "Mei", "Juni", "Juli", 
-    "Agustus", "September", "Oktober", "November", "Desember"];
+    // Tampilkan penulis
+    document.getElementById("penulisPost").innerHTML = `
+    <i class='bx bxs-pencil'></i> ${database_post[0].penulis}
+    `;
 
-// Tampilkan tanggal publikasi
-document.getElementById("tanggalPost").innerHTML = `
-<i class='bx bx-time-five'></i> ${deskripsi[0].tanggal} ${bulan[deskripsi[0].bulan - 1]} ${deskripsi[0].tahun} ${deskripsi[0].jam}
-`;
+    var bulan = ["Januari", "Februari", 'Maret', "April", "Mei", "Juni", "Juli", 
+        "Agustus", "September", "Oktober", "November", "Desember"];
 
-// Share Post
-document.getElementById("sharePost").innerHTML = `
-<p><Strong>Share</Strong> </p>
+    // Tampilkan tanggal publikasi
+    var tahunPost = parseInt(database_post[0].created_at.substr(0,4));
+    var bulanPost = parseInt(database_post[0].created_at.substr(5,2));
+    var tanggalPost = parseInt(database_post[0].created_at.substr(8,2));
+    var jamPost = database_post[0].created_at.substr(11);
 
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-<a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-<a class="a2a_button_facebook"></a>
-<a class="a2a_button_twitter"></a>
-<a class="a2a_button_email"></a>
-<a class="a2a_button_whatsapp"></a>
-<a class="a2a_button_telegram"></a>
-<a class="a2a_button_linkedin"></a>
-</div>
-`;
+    document.getElementById("tanggalPost").innerHTML = `
+    <i class='bx bx-time-five'></i> ${tanggalPost} ${bulan[bulanPost - 1]} ${tahunPost} ${jamPost}
+    `;
 
+    // Isi Postingan
+    document.getElementById('isiPost').innerHTML=`
+    <img src="./assets/img/${database_post[0].gambar}" style="object-fit:cover; width:100%">
+    <br>
+    <br>
+    ${database_post[0].isi_post}
+    `;
 
-var postId = deskripsi[0].id;
-var postNumber;
+    // Share Post
+    document.getElementById("sharePost").innerHTML = `
+    <p><Strong>Share</Strong> </p>
 
-for(let i=0; i<database_berita.length; i++){
-    if(database_berita[i].id == postId){
-        postNumber = i;
-    };
-};
+    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_email"></a>
+    <a class="a2a_button_whatsapp"></a>
+    <a class="a2a_button_telegram"></a>
+    <a class="a2a_button_linkedin"></a>
+    </div>
+    `;
 
-// Prev Post
-document.getElementById("prev_post").innerHTML = `
-<br>
-<a href="./${database_berita[postNumber+1].link}">
-${database_berita[postNumber+1].judul}
-</a>
-`;
-
-// Next Post
-document.getElementById("next_post").innerHTML = `
-<br>
-<a href="./${database_berita[postNumber-1].link}">
-${database_berita[postNumber-1].judul}
-</a>
-`;
+}
