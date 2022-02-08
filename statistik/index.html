@@ -146,54 +146,18 @@
                 <!-- Menu -->
                 <div class="row" style="padding-bottom:20px">
                     <div class="col" style="text-align:center">
-                        <a class="btn text-white" href="#keuangan" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a;margin-bottom:20px; margin-right:10px">Keuangan</a>
-                        <a class="btn text-white" href="#hukum" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a; margin-bottom:20px; margin-right:10px">Hukum</a>
-                        <a class="btn text-white" href="#geografi" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a; margin-bottom:20px; margin-right:10px">Geografi</a>
-                        <a class="btn text-white" href="#kependudukan" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a; margin-bottom:20px; margin-right:10px">Kependudukan</a>
-                        <a class="btn text-white" href="#pendidikan" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a; margin-bottom:20px; margin-right:10px">Pendidikan</a>
-
+                        <a class="btn text-white" id="statistik_keuangan" onclick="readData(this.id)" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a;margin-bottom:20px; margin-right:10px">Keuangan</a>
+                        <a class="btn text-white" id="statistik_hukum" onclick="readData(this.id)" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a; margin-bottom:20px; margin-right:10px">Hukum</a>
+                        <a class="btn text-white" id="statistik_geografi" onclick="readData(this.id)" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a; margin-bottom:20px; margin-right:10px">Geografi</a>
+                        <a class="btn text-white" id="statistik_kependudukan" onclick="readData(this.id)" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a; margin-bottom:20px; margin-right:10px">Kependudukan</a>
+                        <a class="btn text-white" id="statistik_pendidikan" onclick="readData(this.id)" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a; margin-bottom:20px; margin-right:10px">Pendidikan</a>
                     </div>
                 </div>
 
-                <div class="row">
-
-                <!-- Produk Hukum -->
-                <div class="row produk-row">
-                    <div class="col-lg-4 mb-5 position-relative" style="text-align:center; padding-left:20px; padding-right:20px">
-                        <div class="row" style="height:200px">
-                            <div>
-                                <canvas id="myChart"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8" style="padding-left:20px; padding-right:20px">
-                        <p class="produk-title">
-                            <Strong>Produk Hukum</Strong>
-                        </p>
-                        <p class="produk-p">
-                        </p>
-                    </div>
+                <!-- Display Data -->
+                <div class="row" id="dataView" style="text-align:center; margin-bottom:20px">
                 </div>
 
-                <!-- Produk Hukum -->
-                <div class="row produk-row">
-                    <div class="col-lg-8" style="padding-right:20px; padding-left:20px">
-                        <p class="produk-title">
-                            <Strong>Produk Hukum</Strong>
-                        </p>
-                        <p class="produk-p">
-                        </p>
-                    </div>
-                    <div class="col-lg-4 mb-5 position-relative" style="text-align:center; padding-left:20px; padding-right:20px">
-                        <div class="row" style="height:200px">
-                            <div>
-                                <canvas id="myChart2"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                </div>
            </div>
 
         </div>
@@ -222,55 +186,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="./assets/js/read-data.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const labels = [
-    '2017',
-    '2018',
-    '2019',
-    '2020',
-    '2021',
-    '2022',
-  ];
-
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: 'Jumlah PERDES',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [8, 10, 7, 11, 12, 2, 40],
-    },
-    {
-        label: 'Jumlah PERKADES',
-        backgroundColor: 'rgb(0, 0, 0)',
-        borderColor: 'rgb(0, 0, 0)',
-        data: [15, 12, 8, 2, 14, 1, 40],
-    }]
-  };
-
-  const config = {
-    type: 'line',
-    data: data,
-    options: {}
-  };
-</script>
-
-
-<script>
-
-  // === include 'setup' then 'config' above ===
-
-  var myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-  );
-  var myChart2 = new Chart(
-    document.getElementById('myChart2'),
-    config
-  );
-</script>
-
 
 </body>
 </html>
