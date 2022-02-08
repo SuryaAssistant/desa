@@ -99,10 +99,12 @@ function updateData(kategori_database){
             hoverOffset: 4
             }]
         };
+
         
         for (let i=0; i<databaseTerpilih.length; i++){
             data_doughnut.labels[i] = databaseTerpilih[i].nama_anggaran;
             data_doughnut.datasets[0].data[i] = databaseTerpilih[i].nilai_anggaran;
+
 
             var r = () => Math.random() * 256 >> 0;
             var color = `rgb(${r()}, ${r()}, ${r()})`;
@@ -117,13 +119,15 @@ function updateData(kategori_database){
 
         <div class="row" style="margin-bottom:30px">
 
+            <div class="col-lg-3">
+            </div>
+
             <!-- Doughnut Chart -->
             <div class="col-lg-6" id="doughnut_chart">
             <canvas id="chart" width="400" height="400"></canvas>
             </div>
 
-            <!-- Table Here -->
-            <div class="col-lg-6" >
+            <div class="col-lg-3">
             </div>
 
         </div>
