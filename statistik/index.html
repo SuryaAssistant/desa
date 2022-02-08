@@ -73,42 +73,9 @@
             <div class="section-isi">
 
                 <div class="row" style="padding-bottom:20px">
-                    <!-- Pendapatan Desa -->
-                    <div class="col-md-3 mb-3">
-                        <div class="card border-green mb-3 shadow h-100" style="">
-                            <div class="card-body text-green" style="padding-bottom:0px">
-                                <div class="row" style="text-align:center">
-                                    <div class="col">
-                                        <h5 class="card-title" style="font-size:60px; margin-bottom:0px"><i class='bx bx-wallet'></i></h5>
-                                    </div>
-                                    <div class="col">
-                                        <p class="card-text" style="font-size:20px">Rp1.000.000.000,-</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-header" style="font-size:10px">Anggaran Desa 2021</div>
-                        </div>
-                    </div>
-
-                    <!-- Jumlah Produk Hukum -->
-                    <div class="col-md-3 mb-3">
-                        <div class="card border-green mb-3 shadow h-100" style="">
-                            <div class="card-body text-green" style="padding-bottom:0px">
-                                <div class="row" style="text-align:center">
-                                    <div class="col">
-                                        <h5 class="card-title" style="font-size:60px; margin-bottom:0px"><i class='bx bxs-book'></i></h5>
-                                    </div>
-                                    <div class="col">
-                                        <p class="card-text" style="font-size:40px">13</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-header" style="font-size:10px">Produk Hukum Desa 2021</div>
-                        </div>
-                    </div>
 
                     <!-- Jumlah Penduduk -->
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-4 mb-3">
                         <div class="card border-green mb-3 shadow h-100" style="">
                             <div class="card-body text-green" style="padding-bottom:0px">
                                 <div class="row" style="text-align:center">
@@ -116,7 +83,7 @@
                                         <h5 class="card-title" style="font-size:60px; margin-bottom:0px"><i class='bx bx-user'></i></h5>
                                     </div>
                                     <div class="col">
-                                        <p class="card-text" style="font-size:40px">1.435</p>
+                                        <p class="card-text" style="font-size:40px">1.234</p>
                                     </div>
                                 </div>
                             </div>
@@ -124,8 +91,25 @@
                         </div>
                     </div>
 
+                    <!-- Jumlah Produk Hukum -->
+                    <div class="col-md-4 mb-3">
+                        <div class="card border-green mb-3 shadow h-100" style="">
+                            <div class="card-body text-green" style="padding-bottom:0px">
+                                <div class="row" style="text-align:center">
+                                    <div class="col">
+                                        <h5 class="card-title" style="font-size:60px; margin-bottom:0px"><i class='bx bxs-book'></i></h5>
+                                    </div>
+                                    <div class="col">
+                                        <p class="card-text" style="font-size:40px" id="jumlahProdukHukum"></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-header" style="font-size:10px">Produk Hukum Desa 2021</div>
+                        </div>
+                    </div>
+
                     <!-- UMKM Desa -->
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-4 mb-3">
                         <div class="card border-green mb-3 shadow h-100" style="">
                             <div class="card-body text-green" style="padding-bottom:0px">
                                 <div class="row" style="text-align:center">
@@ -133,7 +117,7 @@
                                         <h5 class="card-title" style="font-size:60px; margin-bottom:0px"><i class='bx bx-store'></i></h5>
                                     </div>
                                     <div class="col">
-                                        <p class="card-text" style="font-size:40px">24</p>
+                                        <p class="card-text" style="font-size:40px" id="jumlahProdukDesa"></p>
                                     </div>
                                 </div>
                             </div>
@@ -147,8 +131,6 @@
                 <div class="row" style="padding-bottom:20px">
                     <div class="col" style="text-align:center">
                         <a class="btn text-white" id="statistik_keuangan" onclick="readData(this.id)" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a;margin-bottom:20px; margin-right:10px">Keuangan</a>
-                        <a class="btn text-white" id="statistik_kependudukan" onclick="readData(this.id)" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a; margin-bottom:20px; margin-right:10px">Kependudukan</a>
-                        <a class="btn text-white" id="statistik_pendidikan" onclick="readData(this.id)" role="button" style="border-radius:20px; font-size:12px; background-color:#68a12a; margin-bottom:20px; margin-right:10px">Pendidikan</a>
                     </div>
                 </div>
 
@@ -186,6 +168,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="./assets/js/read-data.js"></script>
+
+    <script src="./assets/js/summary.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
