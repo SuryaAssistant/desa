@@ -1,4 +1,6 @@
 var kategori_database = "";
+var tahun_data;
+
 var pilihanTahun = [{}];
 var databaseTerpilih = [{}];
 
@@ -77,6 +79,7 @@ function showDataBasedOnYear(kategori_database, tahun_anggaran){
         
         getData().then((data) => { 
             databaseTerpilih = data;
+            tahun_data = tahun_anggaran;
             updateData(kategori_database);
         });
 }
@@ -110,6 +113,8 @@ function updateData(kategori_database){
         document.getElementById("dataView").innerHTML += `
 
         <!-- Row for chart -->
+        <h5 style="text-align:center; padding-top:20px; padding-bottom:20px"><Strong>Keuangan Tahun ${tahun_data}</Strong></h5>
+
         <div class="row" style="margin-bottom:20px">
 
             <!-- Doughnut Chart -->

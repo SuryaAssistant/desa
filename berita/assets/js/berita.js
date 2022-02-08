@@ -5,7 +5,7 @@ var info_penting = "";
 
 // Read database
 var database_berita = [{}];
-var jumlahBerita = Object.keys(database_berita).length;
+var jumlahBerita = database_berita.length;
 var max_number = 10;
 
 // page total
@@ -17,6 +17,8 @@ var bulan = ["Januari", "Februari", 'Maret', "April", "Mei", "Juni", "Juli",
 
 
 function startShoWPost(){
+    jumlahBerita = database_berita.length;
+    
     if(jumlahBerita <= max_number){
         max_number = jumlahBerita;
     };
