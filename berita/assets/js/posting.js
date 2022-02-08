@@ -7,8 +7,12 @@ function update_artikel(){
     // -----------------------------META---------------------------------------------
     var meta_description;
     var meta_keywords;
+    var web_title;
 
     // Setting meta tag
+    web_title = '<title>' + String(database_post[0].judul) + '</title>';
+    $('head').append( web_title );
+
     meta_description = '<meta name="description" content="' + String(database_post[0].deskripsi) + '">';
     $('meta[name=description]').remove();
     $('head').append( meta_description );
