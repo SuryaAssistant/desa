@@ -115,7 +115,7 @@ function updateData(kategori_database){
         <!-- Row for chart -->
         <h5 style="text-align:center; padding-top:20px; padding-bottom:20px"><Strong>Keuangan Tahun ${tahun_data}</Strong></h5>
 
-        <div class="row" style="margin-bottom:20px">
+        <div class="row" style="margin-bottom:30px">
 
             <!-- Doughnut Chart -->
             <div class="col-lg-6" id="doughnut_chart">
@@ -128,8 +128,9 @@ function updateData(kategori_database){
 
         </div>
 
-        <!-- Row for table -->
-        <div class="row">
+        <!-- Row for table Pendapatan -->
+        <div class="row" style="margin-bottom:30px">
+            <h5 style="text-align:left">Pendapatan</h5>
             <div class="col">
                 <table class="table table-hover" style="font-size:14px">
                 <thead>
@@ -141,7 +142,47 @@ function updateData(kategori_database){
                         <th>Selisih (Rp)</th>
                     </tr>
                 </thead>
-                <tbody id="table_data">
+                <tbody id="Pendapatan">
+                </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Row for table Belanja -->
+        <div class="row" style="margin-bottom:30px">
+            <h5 style="text-align:left">Belanja</h5>
+            <div class="col">
+                <table class="table table-hover" style="font-size:14px">
+                <thead>
+                    <tr>
+                        <th>Nama Anggaran</th>
+                        <th>Kategori Anggaran</th>
+                        <th>Nilai Anggaran (Rp)</th>
+                        <th>Realisasi Anggaran (Rp)</th>
+                        <th>Selisih (Rp)</th>
+                    </tr>
+                </thead>
+                <tbody id="Belanja">
+                </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Row for table Pembiayaan -->
+        <div class="row" style="margin-bottom:30px">
+            <h5 style="text-align:left">Pembiayaan</h5>
+            <div class="col">
+                <table class="table table-hover" style="font-size:14px">
+                <thead>
+                    <tr>
+                        <th>Nama Anggaran</th>
+                        <th>Kategori Anggaran</th>
+                        <th>Nilai Anggaran (Rp)</th>
+                        <th>Realisasi Anggaran (Rp)</th>
+                        <th>Selisih (Rp)</th>
+                    </tr>
+                </thead>
+                <tbody id="Pembiayaan">
                 </tbody>
                 </table>
             </div>
@@ -156,16 +197,16 @@ function updateData(kategori_database){
         
         });
 
-        // update table
+
+        // update tabel pendapatan
         for(let i=0; i<databaseTerpilih.length; i++){
-            document.getElementById("table_data").innerHTML += `
+            document.getElementById(databaseTerpilih[i].kategori_anggaran).innerHTML += `
             <tr>
                 <td>${databaseTerpilih[i].nama_anggaran}</td>
                 <td>${databaseTerpilih[i].kategori_anggaran}</td>
                 <td>${databaseTerpilih[i].nilai_anggaran}</td>
                 <td>${databaseTerpilih[i].realisasi_anggaran}</td>
                 <td>${(databaseTerpilih[i].nilai_anggaran - databaseTerpilih[i].realisasi_anggaran).toFixed(2)}</td>
-
             </tr>
             `;
         }
