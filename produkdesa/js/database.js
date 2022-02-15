@@ -5,12 +5,12 @@ const _supabase = createClient('https://xnqzrkafpdwivpjtwdvr.supabase.co', 'eyJh
 
 // Read database and save as database
 async function getData() {
-    let { data, error } = await _supabase.from('kategoriproduk').select('*')
+    let { data, error } = await _supabase.from('produkdesa').select('*')
     return data
   }
   
   getData().then((data) => { 
-    umkmDatabase = data;
+    produkdesaDatabase = data;
     updateData();
   }
 
@@ -18,6 +18,6 @@ async function getData() {
 );
 
 function updateData(){
-    displayKategori();
+    displayAllData();
 }
 
