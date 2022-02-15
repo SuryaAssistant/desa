@@ -15,7 +15,7 @@ function displayAllData(){
     document.getElementById("row_daftar_produk").innerHTML = ``;
 
     document.getElementById("row_daftar_produk").innerHTML = `
-    <div id="daftar_produk" class="row row-cols-1 row-cols-2 g-4" style="" align="center"> 
+    <div id="daftar_produk" class="row row-cols-2 row-cols-md-5 g-2" style="" align="center"> 
     </div>
     `;
 
