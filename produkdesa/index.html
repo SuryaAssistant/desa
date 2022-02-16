@@ -71,7 +71,18 @@
             <div class="section-isi">
 
                 <!-- pilih jenis produk -->
-                <div id="kategori_produk">
+                <div class="row">
+                    <div class="col-md-8" style="margin-bottom:20px">
+                        <button type="button" class="btn btn-success" style="font-size:10px; text-align:center" onclick="showAll()">Semua</a>
+                    </div>
+
+                    <!-- Search Area -->
+                    <div class="col-md-4" style="text-align:right;">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Cari Produk" aria-label="Cari Produk" aria-describedby="button-addon2" id="cari_produk" style="font-size:12px">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="search()" style="font-size:12px"><i class='bx bx-search'></i></button>
+                        </div>                    
+                    </div>
                 </div>
 
                 <!-- Produk yang dipilih -->
@@ -107,6 +118,7 @@
     <script src="../assets/js/footer.js"></script>
 
     <script src="./js/produk.js"></script>
+    <Script src="./js/search.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script type="module" src="./js/database.js"></script>

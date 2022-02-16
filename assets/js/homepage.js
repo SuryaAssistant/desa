@@ -1,1 +1,1 @@
-var homepage = "http://fandiadinata.com/desa";
+var homepage = "https://jetislor-pacitan.com";

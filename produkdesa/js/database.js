@@ -18,6 +18,6 @@ async function getData() {
 );
 
 function updateData(){
-    displayAllData();
+    displayData(produkdesaDatabase);
 }
 
