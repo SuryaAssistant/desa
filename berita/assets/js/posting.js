@@ -13,6 +13,8 @@ function update_artikel(){
     web_title = '<title>' + String(database_post[0].judul) + '</title>';
     $('head').append( web_title );
 
+    $('head').append('<link rel="icon" href="../assets/img/logo_pacitan_icon.png">');
+
     meta_description = '<meta name="description" content="' + String(database_post[0].deskripsi) + '">';
     $('meta[name=description]').remove();
     $('head').append( meta_description );
