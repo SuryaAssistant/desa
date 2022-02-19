@@ -202,6 +202,11 @@ section {
     font-size:10px !important;
   }
 
+  .produk-button{
+    border-radius:20px !important; 
+    font-size:10px !important; 
+    background-color:#68a12a !important;
+  }
   
   /*--------------------- Berita Section ----------------------*/
   .berita-p{

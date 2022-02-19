@@ -1,4 +1,5 @@
 var produkdesaDatabase;
+var daftarKategori = [{}];
 
 var idProduk;
 
