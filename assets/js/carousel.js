@@ -25,13 +25,12 @@ for(let i = 1; i <= 3; i++)
     idName = "carousel_" + String(i);
 
     document.getElementById(idName).innerHTML = `
-    <img src="${carousel_data[i-1].img}" style="object-fit:cover; max-height:400px; width:100%">
+    <img src="${carousel_data[i-1].img}" style="object-fit:cover; height:400px; width:100%">
 
     <div class="carousel-caption">
         <div class="container position-relative">
             <div class="row" style="text-align:center;">
                 <div class="col">
-                    <h1><Strong>${carousel_data[i-1].deskripsi}</Strong></h1>
                 </div>
             </div>
         </div>
