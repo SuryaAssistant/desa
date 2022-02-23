@@ -140,13 +140,12 @@ function updateData(kategori_database){
                 <thead>
                     <tr>
                         <th>Nama Anggaran</th>
-                        <th>Kategori Anggaran</th>
                         <th>Nilai Anggaran (Rp)</th>
                         <th>Realisasi Anggaran (Rp)</th>
                         <th>Selisih (Rp)</th>
                     </tr>
                 </thead>
-                <tbody id="Pendapatan">
+                <tbody id="Pendapatan" style="font-size:12px">
                 </tbody>
                 </table>
             </div>
@@ -160,13 +159,12 @@ function updateData(kategori_database){
                 <thead>
                     <tr>
                         <th>Nama Anggaran</th>
-                        <th>Kategori Anggaran</th>
                         <th>Nilai Anggaran (Rp)</th>
                         <th>Realisasi Anggaran (Rp)</th>
                         <th>Selisih (Rp)</th>
                     </tr>
                 </thead>
-                <tbody id="Belanja">
+                <tbody id="Belanja" style="font-size:12px">
                 </tbody>
                 </table>
             </div>
@@ -180,13 +178,12 @@ function updateData(kategori_database){
                 <thead>
                     <tr>
                         <th>Nama Anggaran</th>
-                        <th>Kategori Anggaran</th>
                         <th>Nilai Anggaran (Rp)</th>
                         <th>Realisasi Anggaran (Rp)</th>
                         <th>Selisih (Rp)</th>
                     </tr>
                 </thead>
-                <tbody id="Pembiayaan">
+                <tbody id="Pembiayaan" style="font-size:12px">
                 </tbody>
                 </table>
             </div>
@@ -207,12 +204,15 @@ function updateData(kategori_database){
             document.getElementById(databaseTerpilih[i].kategori_anggaran).innerHTML += `
             <tr>
                 <td>${databaseTerpilih[i].nama_anggaran}</td>
-                <td>${databaseTerpilih[i].kategori_anggaran}</td>
-                <td>${databaseTerpilih[i].nilai_anggaran}</td>
-                <td>${databaseTerpilih[i].realisasi_anggaran}</td>
-                <td>${(databaseTerpilih[i].nilai_anggaran - databaseTerpilih[i].realisasi_anggaran).toFixed(2)}</td>
+                <td>${(databaseTerpilih[i].nilai_anggaran).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
+                <td>${(databaseTerpilih[i].realisasi_anggaran).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
+                <td>${((databaseTerpilih[i].nilai_anggaran - databaseTerpilih[i].realisasi_anggaran).toFixed(2)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</td>
             </tr>
             `;
         }
     }
+}
+
+function comma_separated(nilaiInput){
+    return nilaiInput.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
